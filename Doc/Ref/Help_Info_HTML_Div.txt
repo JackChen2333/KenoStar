@@ -1,0 +1,19 @@
+<div id="overlayHolder" class="active">
+   <div id="infoOverlay" class="">
+      <div id="overlaySpacer"></div>
+      <div id="overlayControls">
+         <div id="overlayControlsWrapper" class="controlsWrapper">
+            <div id="overlay-home" class="button inactive"></div>
+            <div id="overlay-sound" class="button inactive"></div>
+            <div id="overlay-info" class="button active"></div>
+            <div id="overlay-close" class="button inactive"></div>
+         </div>
+      </div>
+      <div id="overlayContent" class="scrollable">
+         <div id="loadedContent">
+         
+         </div>
+      </div>
+      <div id="overlayFooter"></div>
+   </div>
+</div>

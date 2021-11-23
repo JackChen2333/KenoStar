@@ -1,0 +1,68 @@
+{"frames": {
+
+"constellation.png":
+{
+	"frame": {"x":1,"y":1,"w":664,"h":388},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":664,"h":388},
+	"sourceSize": {"w":664,"h":388}
+},
+"logo_kenoStars.png":
+{
+	"frame": {"x":667,"y":1,"w":266,"h":205},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":266,"h":205},
+	"sourceSize": {"w":266,"h":205}
+},
+"revealStars.png":
+{
+	"frame": {"x":1,"y":561,"w":494,"h":330},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":494,"h":330},
+	"sourceSize": {"w":494,"h":330}
+},
+"selectNumbers.png":
+{
+	"frame": {"x":497,"y":561,"w":359,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":359,"h":156},
+	"sourceSize": {"w":359,"h":156}
+},
+"splashText_Jackpot.png":
+{
+	"frame": {"x":1,"y":391,"w":873,"h":133},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":873,"h":133},
+	"sourceSize": {"w":873,"h":133}
+},
+"splashText_Reveal.png":
+{
+	"frame": {"x":497,"y":719,"w":393,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":393,"h":33},
+	"sourceSize": {"w":393,"h":33}
+},
+"splashText_Stars.png":
+{
+	"frame": {"x":1,"y":526,"w":905,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":905,"h":33},
+	"sourceSize": {"w":905,"h":33}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SplashPage.png",
+	"format": "RGBA8888",
+	"size": {"w":934,"h":892},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:23326f603afa1b13e49d1f1e97d38ea9:15b4542e56e1f983530a391885784978:1ca8f2592ca6dc383c7818a38529a95c$"
+}
+}

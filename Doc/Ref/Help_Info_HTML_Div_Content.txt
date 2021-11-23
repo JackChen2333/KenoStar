@@ -1,0 +1,56 @@
+<p>Play Responsibly.</p>
+<p>If you or someone you know has a gambling problem, call the&nbsp;<a href="https://www.ncpgambling.org/" target="_blank">National Council on Problem Gambling&nbsp;</a>help-line at 1-800-522-4700.</p>
+<p>Si usted tiene un problema de jugador compulsivo llame al 1-800-522-4700.</p>
+<p>All prizes over $9,999.99 must be claimed at the Office of Lottery and Gaming Prize Center.</p>
+<p><strong>How to play</strong></p>
+<p>Select the ticket cost, then press PLAY or press the Space bar on your keyboard to purchase the ticket and start the game.</p>
+<p>Once the PLAY button has been selected the stake is deducted from the current balance and the game starts</p>
+<p>At the end of the game, any winnings for that go are displayed in the TOTAL WON panel. To play again press the PLAY button or press the Space bar on your keyboard.</p>
+<p>Press PLAY and the board of hexagons will flip to show a new symbol within each hexagon slot. If a winning pattern is revealed you win the prize for that pattern.</p>
+<p><strong>Winning patterns</strong></p>
+<p>Revealing a cluster of 3 or more matching symbols where each symbol is touching another matching symbol wins the corresponding prize in the Pay Table. Symbols appear within hexagons, so there are 6 potential sides that can be touching.</p>
+<p>If a winning pattern is revealed and that pattern creates a complete link from the top to the bottom of the game board, the prize for that pattern is multiplied by 2.</p>
+<p>If a winning pattern is revealed and that pattern creates a complete link from the left to the right of the game board, the prize for that pattern is multiplied by 3.</p>
+<p><strong>Free Plays</strong></p>
+<p>Find 3 FREE PLAYS symbols to unlock free plays. 10 Free Plays will then play out.</p>
+<p><strong>Bonus Games</strong></p>
+<p>Finding 3 like Bonus Game symbols activates the Bonus Game.</p>
+<ul>
+   <li>
+      <p>Blue Bonus - Find 3 Blue Symbols to activate the Blue Bonus. Then pick 3 honeycomb cells to reveal 3 prizes. The 3 prizes revealed are then awarded.</p>
+   </li>
+   <li>
+      <p>Red Bonus - Find 3 Red Bonus Symbols to activate the Red Bonus. Then pick 5 honeycomb cells to reveal 5 prizes. The 5 prizes revealed are then awarded.</p>
+   </li>
+   <li>
+      <p>Yellow Bonus - Find 3 Yellow Bonus Symbols to activate the Yellow Bonus. Then pick 7 honeycomb cells to reveal 7 prizes. The 7 prizes revealed are then awarded.</p>
+   </li>
+</ul>
+<p><strong>Auto Play</strong></p>
+<p>Press the AUTO PLAY button to open the auto play interface. The following settings are available to define how many auto plays you would like:</p>
+<ul>
+   <li>
+      <p>Number of plays – total number of games that will be played at the current stake. The available options are 5, 10, 25 &amp; 50 plays.</p>
+   </li>
+   <li>
+      <p>Loss limit – auto play will stop when you hit your loss limit, which can be set as a multiple of your current bet stake. If you don’t want a loss limit, simply select the NO LIMIT at the end of the row.</p>
+   </li>
+   <li>
+      <p>Single win limit – auto play will stop when you hit a single win limit, which is set as a multiple of your current stake. If you don’t want a single win limit, simply select the NO LIMIT at the end of the row.</p>
+   </li>
+</ul>
+<p>Once you have defined your settings of choice, press 'SET AUTO PLAY' to start your auto play session at the currently selected stake. Press the stop button at any time to stop any auto play games once the current round is completed.</p>
+<p><strong>Winning</strong></p>
+<p>Wins are achieved by:</p>
+<ul>
+   <li>
+      <p>Revealing a winning pattern on the main game board.</p>
+   </li>
+   <li>
+      <p>Revealing a winning pattern on a Free Plays game board.</p>
+   </li>
+   <li>
+      <p>Bonus Game – Revealing prizes within honeycomb cells.</p>
+   </li>
+</ul>
+<p>v9 </p>

@@ -1,0 +1,11 @@
+1. Python 3.x
+
+2. NodeJs: https://nodejs.org/en/download/
+
+3. UglifyJs: https://www.npmjs.com/package/uglify-js    
+
+4. avascript-obfuscator: https://www.npmjs.com/package/javascript-obfuscator
+	NOTE: use -g to install
+	npm install  javascript-obfuscator --save -g 
+
+5. TexturePacker GUI (not free)

@@ -1,0 +1,75 @@
+<p>
+  	Play Responsibly.
+</p>
+
+<p>
+  If you or someone you know has a gambling problem, call the&nbsp;
+  	<a href="https://www.ncpgambling.org/" target="_blank">
+      	National Council on Problem Gambling&nbsp;
+  	</a>
+  help-line at 1-800-522-4700.
+</p>
+
+<p>
+  	Si usted tiene un problema de jugador compulsivo llame al 1-800-522-4700.
+</p>
+
+
+
+<p>
+  	All prizes over $9,999.99 must be claimed at the Office of Lottery and Gaming Prize Center.
+</p>
+
+<p>
+  	<strong>
+      How to play
+  	</strong>
+</p>
+
+
+<p>
+  	Select the ticket cost, then press PLAY or press the Space bar on your keyboard to purchase the ticket and start the game. One or two bingo cards will be activated depending on the ticket cost selected.
+</p>
+
+
+<p>
+  	Once the PLAY button has been selected the stake is deducted from the current balance and the game starts.
+</p>
+
+
+<p>
+  	At the end of the game, any winnings for that go are displayed in the TOTAL WON panel. To play again press the PLAY button or press the Space bar on your keyboard.
+</p>
+
+
+<p>
+  	Press PLAY and the card numbers to match will be revealed. The winning bonus number is also revealed in the top left. Thirty draw balls appear. Press TURBO to speed up the draw. If a winning pattern is revealed, you win the prize for that pattern. Only the highest prize pattern is awarded for each card.
+</p>
+
+
+<p><strong>Bonus Games</strong></p>
+<ul>
+   <li>
+      <p>
+        Instant Win Bonus - If the bonus number is matched, an instant win prize will be awarded. Tap the bonus win pinata to reveal your instant win prize.
+     </p>
+   </li>
+   <li>
+      <p>
+       Bonus Spin Multiplier – Press anywhere to start the Bonus Spin Reels. If three matching symbols are revealed, you win the multiplier shown.
+     </p>
+   </li>
+</ul>
+
+
+<p><strong>Winning</strong></p>
+<p>Wins are achieved by:</p>
+<ul>
+   <li>
+      <p>Revealing a winning pattern on one or two cards.</p>
+   </li>
+   <li>
+      <p>Matching the game’s bonus number and revealing the instant win prize.</p>
+   </li>
+</ul>
+<p>v1 </p>

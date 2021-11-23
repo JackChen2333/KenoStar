@@ -1,0 +1,92 @@
+{"frames": {
+
+"autoplay_bg.png":
+{
+	"frame": {"x":1,"y":1,"w":1000,"h":615},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1000,"h":615},
+	"sourceSize": {"w":1000,"h":615}
+},
+"autoplay_bg_top_bar.png":
+{
+	"frame": {"x":1,"y":618,"w":1000,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1000,"h":85},
+	"sourceSize": {"w":1000,"h":85}
+},
+"autoplay_config_large_btn_down.png":
+{
+	"frame": {"x":459,"y":705,"w":227,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":227,"h":75},
+	"sourceSize": {"w":227,"h":75}
+},
+"autoplay_config_large_btn_up.png":
+{
+	"frame": {"x":657,"y":782,"w":227,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":227,"h":75},
+	"sourceSize": {"w":227,"h":75}
+},
+"autoplay_config_small_btn_down.png":
+{
+	"frame": {"x":688,"y":705,"w":116,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":75},
+	"sourceSize": {"w":116,"h":75}
+},
+"autoplay_config_small_btn_up.png":
+{
+	"frame": {"x":806,"y":705,"w":116,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":75},
+	"sourceSize": {"w":116,"h":75}
+},
+"autoplay_confirm_btn.png":
+{
+	"frame": {"x":1,"y":705,"w":227,"h":95},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":227,"h":95},
+	"sourceSize": {"w":227,"h":95}
+},
+"autoplay_confirm_btn_bg.png":
+{
+	"frame": {"x":230,"y":705,"w":227,"h":95},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":227,"h":95},
+	"sourceSize": {"w":227,"h":95}
+},
+"autoplay_title.png":
+{
+	"frame": {"x":58,"y":802,"w":597,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":597,"h":48},
+	"sourceSize": {"w":597,"h":48}
+},
+"autoplay_x_btn.png":
+{
+	"frame": {"x":1,"y":802,"w":55,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":55,"h":55},
+	"sourceSize": {"w":55,"h":55}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ingameautoplaylayer.png",
+	"format": "RGBA8888",
+	"size": {"w":1002,"h":858},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:b6d788dfaf6f0729ba5073b6b4100201:8d3c263ccde663e9b2c89cb9b0fa391a:974525f40c6eae16180d076281e5e635$"
+}
+}

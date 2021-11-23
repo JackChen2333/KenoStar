@@ -1,0 +1,20 @@
+{"frames": {
+
+"night_sky.png":
+{
+	"frame": {"x":1,"y":1,"w":2048,"h":1024},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":2048,"h":1024},
+	"sourceSize": {"w":2048,"h":1024}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "scene_bg_1.png",
+	"format": "RGBA8888",
+	"size": {"w":2050,"h":1026},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c3684fef8db7d43a6bc19268580563bc:238818f1055934ca238bbdb66326ed1e:1256a1ee8270a1c66a5527c04b82d793$"
+}
+}

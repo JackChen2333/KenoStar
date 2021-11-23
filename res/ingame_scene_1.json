@@ -1,0 +1,60 @@
+{"frames": {
+
+"jackpot_title.png":
+{
+	"frame": {"x":92,"y":851,"w":217,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":217,"h":70},
+	"sourceSize": {"w":217,"h":70}
+},
+"logo.png":
+{
+	"frame": {"x":1,"y":1,"w":266,"h":205},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":266,"h":205},
+	"sourceSize": {"w":266,"h":205}
+},
+"num_bg_purple.png":
+{
+	"frame": {"x":1,"y":851,"w":89,"h":89},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":89},
+	"sourceSize": {"w":89,"h":89}
+},
+"num_bg_red.png":
+{
+	"frame": {"x":201,"y":923,"w":89,"h":89},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":89},
+	"sourceSize": {"w":89,"h":89}
+},
+"pannel_bg.png":
+{
+	"frame": {"x":1,"y":208,"w":249,"h":641},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":249,"h":641},
+	"sourceSize": {"w":249,"h":641}
+},
+"payout_title.png":
+{
+	"frame": {"x":1,"y":942,"w":198,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":70},
+	"sourceSize": {"w":198,"h":70}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ingame_scene_1.png",
+	"format": "RGBA8888",
+	"size": {"w":310,"h":1014},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:16ada8c0357d56b7fa8407ce77fda04b:9173bd6fe362b870a4e47fa867fdffd0:6582f727164beefb849521f9a4709bc1$"
+}
+}

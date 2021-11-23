@@ -1,0 +1,24 @@
+They use iFrame to load the game.
+the lobby is here, you could just open the Money Bee game in lobby,
+https://www.dcilottery.com/en/view/e-instants
+
+Then you should find the iframe through Body ->div(edge-page) -> div(main-wrapper theme) -> div -> div(casino-game-dialog) -> div(modal-content page) -> div(modal-body) -> div(modal-content-body) -> div() -> div(class='row') -> div(class='col-ms-12) -> div(iFrame which loads the real game index page).
+
+
+The real game index page is here:(You have to change the run-time data to load the game correctly)
+https://washingtondclottery.finrings.com/games/dc-money-bee/?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjY5NjQyNDgsInBsYXllciI6eyJwbGF5ZXJJZCI6ImRlbW86MTYyNjk2MzM0OCIsImRhdGEiOnsiY3VycmVuY3kiOiJHQlAiLCJjdXJyZW50QmFsYW5jZSI6MTAwMCwicGxhdGZvcm0iOiJXIn19fQ.eJVoE5xQUAFxbxKKSAmOHxMMKaAFbFcRPyEWVL1oCAw&language=ENG&lobbyUrl=http%3A%2F%2Fwww.dcilottery.com%2Fen%2Fview%2Fe-instants&platform=W&playMode=D
+
+
+https://content-washingtondclottery.finrings.com/games/dc-money-bee/bootstrap.js?no_cache=2.14.0
+他们的游戏页面了似乎用到了bootstrap 但是文件里面找到了如下:(似乎不是真的bootstrap by twitter)
+http://www.pixijs.com/
+https://greensock.com/
+https://howlerjs.com/
+isMobile.js v0.4.1
+
+
+
+
+
+
+挺有意思的发现: 在game的index页面里, 居然发现了script for //remove baidu search ad

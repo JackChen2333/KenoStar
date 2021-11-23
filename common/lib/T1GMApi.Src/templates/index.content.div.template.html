@@ -1,0 +1,77 @@
+<div id='content'>
+    <div id="game"></div>
+            
+    <div id="statusBarHolder">
+        <div id="statusBar">
+            <div id="statusBar-balance" class="statusBarContainer">
+                <span class="statusBar-title">DEMO BALANCE:</span>
+                <span class="statusBar-value">$1,000</span>
+            </div><div id="statusBar-cost" class="statusBarContainer">
+                <span class="statusBar-title">COST:</span>
+                <span class="statusBar-value">$1</span>
+            </div><div id="statusBar-win" class="statusBarContainer">
+                <span class="statusBar-title">WIN:</span>
+                <span class="statusBar-value"></span>
+            </div>
+        </div>
+    </div>
+            
+    <div id="loader" style="display: none;">
+        <div id="deploymentVersion"><span></span></div>
+        <div id="loader-header" class="show"></div>
+        <div id="logo">
+            <img id="logoImg" src="./common/img/logo.png">
+        </div>
+        <div id="loadingBarHolder">
+            <div class="meter">
+                <span id="loadingBarMeter" style="width: 0%;"></span>
+            </div>
+        </div>
+        <div id="disclaimer">
+            <img id="disclaimerImg" src="./common/img/legal.png">
+        </div>
+    </div>
+
+    <div id="rotatePrompt" class="hide">
+        <img src="./common/img/rotatePortrait.gif">
+    </div>
+
+    <div id="fullscreenPrompt" class="hide">
+        <img src="./common/img/tap.gif">
+    </div>
+
+    <div id="messaging" class="show" style="display: none;"> 
+        <div id="messageBox">
+            <div id="messageDetails">
+                <div id="messageHeader">Sounds</div>
+                <div id="messageDescription">Do you want to enable sounds?</div>
+            </div>
+            <div id="messageActions">
+                <a class="action" data-action="acceptSounds">YES</a>
+                <a class="action" data-action="declineSounds">NO</a></div>
+            <div id="errorCode"></div>
+        </div>
+    </div>
+            
+    <div id="overlayHolder" class="inactive">
+        <div id="infoOverlay" class="">
+            <div id="overlaySpacer"></div>
+            <div id="overlayControls">
+                <div id="overlayControlsWrapper" class="controlsWrapper">
+                    <div id="overlay-home" class="button inactive"></div>
+                    <div id="overlay-sound" class="button inactive"></div>
+                    <!-- <div id="overlay-info" class="button inactive"></div> -->
+                    <div id="overlay-close" class="button inactive"></div>
+                </div>
+            </div>
+            <div id="overlayContent" class="scrollable">
+                <div id="loadedContent">
+                
+                </div>
+            </div>
+            <div id="overlayFooter"></div>
+        </div>
+    </div> 
+</div>
+
+<button title="HOOK DIV" style="width: 1px; height: 1px; position: absolute; top: -1000px; left: -1000px; z-index: 2; background-color: rgb(255, 0, 0);"></button>
