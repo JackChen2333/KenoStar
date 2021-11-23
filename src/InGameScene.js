@@ -947,23 +947,15 @@ InGameScene.prototype._createButtonGroup = function() {
     this._playAgainBtn.setVisible(false);
     this._container.addChild(this._playAgainBtn.getTransform());
     this._playAgainBtn.addEventListener('click', new xqu.Callback(self._onClickplayAgainBtn, self));
-
-
-    
-
   
     /*this._staremitter = new PlayButtonEmitter();
     this._container.addChild(this._staremitter.getTransform());
     this._staremitter.enable();*/
-    
-
-
 
     //this._playButtonGroup.push(this._playBtn);
     //this._playButtonGroup.push(this._turboBtn);
     //this._playButtonGroup.push(this._playAgainBtn);
 }
-
 
 /*InGameScene.prototype._kaishiClick = function(e) {
     var self = this;
