@@ -108,7 +108,7 @@ function InGameScene(mainGame)
     this._payoutInit=[];
     this._payoutWin=[];
     this._payoutWinPrice=[];
-    this._autoLeftText=null;
+    this._autoLeft=null;
     this._autoLeftCount=0;
 
 
@@ -885,25 +885,14 @@ InGameScene.prototype._createButtonGroup = function() {
 
     var autobg= new Sprite(TextureCache['autoplay_BackDrop_purple.png']);
     autobg.anchor.set(0.5);
-    if(xqu.config.IsMobile()){
-      autobg.x=buttonPositionX-165;
-      autobg.y=buttonPositionY-20;
-    }else{
-      autobg.x=buttonPositionX-215;
-      autobg.y=buttonPositionY+5;
-    }
+    autobg.x=buttonPositionX-215;
+    autobg.y=buttonPositionY;
     this._container.addChild(autobg);
 
     var autoleftbg= new Sprite(TextureCache['autoPlay_backdrop_black.png']);
     autoleftbg.anchor.set(0.5);
-    if(xqu.config.IsMobile()){
-      autoleftbg.x=buttonPositionX-165;
-      autoleftbg.y=buttonPositionY+50-10;
-    }else{
-      autoleftbg.x=buttonPositionX-215;
-      autoleftbg.y=buttonPositionY+50+15;
-    }
-
+    autoleftbg.x=buttonPositionX-215;
+    autoleftbg.y=buttonPositionY+50;
     this._container.addChild(autoleftbg);
 
     this._autoStopBtn = new xqu.pixi.SimpleButton("autostop_button",
@@ -911,9 +900,9 @@ InGameScene.prototype._createButtonGroup = function() {
         TextureCache['autoPlayStop_Press.png'],
         TextureCache['autoPlayStop_roll.png']);
     if(xqu.config.IsMobile()){
-      this._autoStopBtn.setPosition(buttonPositionX-215+this._xmXM, buttonPositionY-55);
+      this._autoStopBtn.setPosition(buttonPositionX-215+this._xmXM, buttonPositionY);
     }else{
-      this._autoStopBtn.setPosition(buttonPositionX-215, buttonPositionY-50+20);
+      this._autoStopBtn.setPosition(buttonPositionX-215, buttonPositionY-50);
     }
     this._autoStopBtn.getTransform().visible=false;
     this._autoStopBtn.setEnable(false);
@@ -925,9 +914,9 @@ InGameScene.prototype._createButtonGroup = function() {
         TextureCache['btn_autoplay_press.png'],
         TextureCache['btn_autoPlay_roll.png']);
     if(xqu.config.IsMobile()){
-      this._autoPlayBtn.setPosition(buttonPositionX-215+this._xmXM, buttonPositionY-55);
+      this._autoPlayBtn.setPosition(buttonPositionX-215+this._xmXM, buttonPositionY);
     }else{
-      this._autoPlayBtn.setPosition(buttonPositionX-215, buttonPositionY-50+20);
+      this._autoPlayBtn.setPosition(buttonPositionX-215, buttonPositionY-50);
     }
     this._autoPlayBtn.setVisible(true);
     this._autoPlayBtn.setEnable(false);
@@ -988,7 +977,8 @@ InGameScene.prototype._createButtonGroup = function() {
     this._container.addChild(this._playAgainBtn.getTransform());
     this._playAgainBtn.addEventListener('click', new xqu.Callback(self._onClickplayAgainBtn, self));
   
-    this._autoTicker=new PIXI.Ticker();
+    this._autoTicker=PIXI.Ticker.shared;
+    this._autoTicker.autoStart=false;
     this._autoTicker.stop();
     /*this._autoTicker.add(function(time){
       if(this._playAgainBtn.getTransform().visible==true){
@@ -1042,16 +1032,11 @@ InGameScene.prototype._createPayoutPannel = function() {
 InGameScene.prototype._createFontPannel = function() {
     var self=this;
 
-    this._autoLeftText = new PIXI.BitmapText('0', { fontName: "unselectPink", fontSize: 33, align: 'center' });
-    this._autoLeftText.anchor.set(0.5);
-    if(xqu.config.IsMobile()){
-      this._autoLeftText.x=705;
-      this._autoLeftText.y=1720;
-    }else{
-      this._autoLeftText.x=1355;
-      this._autoLeftText.y=1196;
-    }
-    this._container.addChild(this._autoLeftText);
+    this._autoLeft = new PIXI.BitmapText('0', { fontName: "unselectPink", fontSize: 33, align: 'center' });
+    this._autoLeft.anchor.set(0.5);
+    this._autoLeft.x=1355;
+    this._autoLeft.y=1181;
+    this._container.addChild(this._autoLeft);
 
     for(var i=0;i<80;i++){
       this._unselectFont[i] = new PIXI.BitmapText(''+(i+1).toString(), { fontName: "unselectPink", fontSize: 33, align: 'center' });
@@ -1504,8 +1489,8 @@ InGameScene.prototype._createFontPannel = function() {
 
 InGameScene.prototype._onClickNumBtn = function(e) {
   //xqu.audio.playEffect('Snd_Play_Button');
-  //xqu.log("InGameScene: number button clicked");
-  //xqu.log("InGameScene: select count =  "+this._selectCount);
+  xqu.log("InGameScene: number button clicked");
+  xqu.log("InGameScene: select count =  "+this._selectCount);
   this._clearAll.setEnable(true);
 
   if(this._selectCount<10){
@@ -1514,6 +1499,7 @@ InGameScene.prototype._onClickNumBtn = function(e) {
       if(e.target.index==i){
         e.target.setVisible(false);
         e.target.setEnable(false);
+        console.log("i ="+i);
         this._unselectFont[i].visible=false;
         this._selectBG[i].setEnable(true);
         this._selectBG[i].setVisible(true);
@@ -1577,13 +1563,13 @@ InGameScene.prototype._onClickNumBtn = function(e) {
     }
   }
 
-  //console.log(this._selectNum);
+  console.log(this._selectNum);
 
 }
 
 InGameScene.prototype._onClickNumDownBtn = function(e) {
     //xqu.audio.playEffect('Snd_Play_Button');
-    //xqu.log("InGameScene: number down button clicked");
+    xqu.log("InGameScene: number down button clicked");
     this._autoPlayBtn.setEnable(false);
     this._autoPick.setVisible(true);
     this._autoPick.setEnable(true);
@@ -1629,7 +1615,7 @@ InGameScene.prototype._onClickNumDownBtn = function(e) {
         if(e.target.index==i){
           e.target.setVisible(false);
           e.target.setEnable(false);
-          //console.log("i ="+i);
+          console.log("i ="+i);
           this._selectFont[i].visible=false;
           this._unselectBG[i].setVisible(true);
           this._unselectBG[i].setEnable(true);
@@ -1650,7 +1636,7 @@ InGameScene.prototype._onClickNumDownBtn = function(e) {
       this._selectNum[tindex++]=i;
     }
   }
-  //console.log(this._selectNum);
+  console.log(this._selectNum);
     
 };
 
@@ -1686,7 +1672,7 @@ InGameScene.prototype._wagerUpdate = function(e) {
         this._selectBall[i].visible=false;
       }
 
-      //console.log("trigger "+this._selectNumTrigger);
+      console.log("trigger "+this._selectNumTrigger);
       console.log("selectNum "+this._selectNum);
       for(var i=0;i<this._selectNum.length;i++){
         this._unselectBG[this._selectNum[i]].setVisible(false);
@@ -1697,7 +1683,7 @@ InGameScene.prototype._wagerUpdate = function(e) {
 
       //this._selectNum=[];
       this._selectNumTrigger=false;
-      //console.log("trigger "+this._selectNumTrigger);
+      console.log("trigger "+this._selectNumTrigger);
     }
 
     this._selectNum=[];
@@ -1810,14 +1796,14 @@ InGameScene.prototype._wagerUpdate = function(e) {
     }
   }
 
-  //xqu.log("InGameScene: wager text update");
+  xqu.log("InGameScene: wager text update");
 
 
 }
 
 InGameScene.prototype._onClickclearAllBtn = function(e) {
     //xqu.audio.playEffect('Snd_Play_Button');
-    //xqu.log("InGameScene: clear all  button clicked");
+    xqu.log("InGameScene: clear all  button clicked");
 
     if(this._jackpotReset>-1){
       this._jackpotWinNum[this._jackpotReset].text=this._sanweiUpdate(this._jackpotListOri[this._jackpotReset]);
@@ -1883,6 +1869,7 @@ InGameScene.prototype._onClickclearAllBtn = function(e) {
 
     if(this._chooseTween!=null && this._msg[0].x!=this._msgX){
       this._chooseTween=null;
+      xqu.log('im here');
       this._msg[0].x=this._msgX+700;
       TweenLite.to(this._msg[0],0.3,{x:this._msgX});
       this._msg[1].x=this._msgX;
@@ -1935,7 +1922,7 @@ InGameScene.prototype._onClickautoPickBtn = function(e) {
 
 
     //xqu.audio.playEffect('Snd_Play_Button');
-    //xqu.log("InGameScene: auto pick button clicked");
+    xqu.log("InGameScene: auto pick button clicked");
     this._autoPlayBtn.setEnable(true);
     this._againBtnEmitter.enable();
     if(xqu.config.IsMobile()){
@@ -1985,7 +1972,7 @@ InGameScene.prototype._onClickautoPickBtn = function(e) {
 
 InGameScene.prototype._onClickRevealBtn = function(e) {
     //xqu.audio.playEffect('Snd_Play_Button');
-    //xqu.log("InGameScene: reveal btn clicked");
+    xqu.log("InGameScene: reveal btn clicked");
     //clearTimeout(this._revealTween);
     for(var i=0;i<this._playBtnEmitter.length;i++){
       this._playBtnEmitter[i]._setPos(5000,5000);
@@ -1994,11 +1981,11 @@ InGameScene.prototype._onClickRevealBtn = function(e) {
     }
     for(var i=0;i<this._showNumTime.length;i++){
       clearTimeout(this._showNumTime[i]);
-      //xqu.log("InGameScene: reveal clear success");
+      xqu.log("InGameScene: reveal clear success");
     }
     this._revealBtn.setEnable(false);
 
-    this._showResAfterClearTimeout(this._selectBall,this._unselectBall,this._fireBall,this._starOverBall,this._resList,this._unselectBG,this._selectBG,this._youbox,this._payoutWhiteWinSlot,this._payoutWinPrice,this._wagerxs,this._xmbaixing,this._xmduobeilvWin,this._wagerIncBtn,this._wagerDecBtn,this._playAgainBtn,this._clearAll,this._revealBtn,this._curBalance,this._totalWin,this._totalWinText,this._msg,this._msgX,this._jackpotList,this._jackpotListOri,this._ifJack,this._jackpotListUpdate,this._jackpotWinNum,this._jackpotWinPrice,this._jackpotPriceShow,this._sanweiUpdate,this._zuobox,this._jackpotWinSlot,this._againBtnEmitter,this._playBtnEmitter,this._jackpotReset,this._autoPlayBtn,this._autoStopBtn);
+    this._showResAfterClearTimeout(this._selectBall,this._unselectBall,this._fireBall,this._starOverBall,this._resList,this._unselectBG,this._selectBG,this._youbox,this._payoutWhiteWinSlot,this._payoutWinPrice,this._wagerxs,this._xmbaixing,this._xmduobeilvWin,this._wagerIncBtn,this._wagerDecBtn,this._playAgainBtn,this._clearAll,this._revealBtn,this._curBalance,this._totalWin,this._totalWinText,this._msg,this._msgX,this._jackpotList,this._jackpotListOri,this._ifJack,this._jackpotListUpdate,this._jackpotWinNum,this._jackpotWinPrice,this._jackpotPriceShow,this._sanweiUpdate,this._zuobox,this._jackpotWinSlot,this._againBtnEmitter,this._playBtnEmitter,this._jackpotReset);
     
     /*for(var i=0;i<this._fireBall.length;i++){
       this._fireBall[i].visible=false;
@@ -2086,7 +2073,7 @@ InGameScene.prototype._onClickRevealBtn = function(e) {
 }
 
 
-InGameScene.prototype._showResAfterClearTimeout = function(selectBall,unselectBall,fireBall,starOverBall,resList,unselectBG,selectBG,youbox,payoutWhiteWinSlot,payoutWinPrice,wagerxs,xmbaixing,xmduobeilvWin,wagerIncBtn,wagerDecBtn,playAgainBtn,clearAll,revealBtn,curBalance,totalWin,totalWinText,msg,msgX,jackpotlist,jackpotlistori,ifjackpot,jackpotlistupdate,jackpotwinnum,jackpotwinprice,jackpotpriceshow,sanweiupdate,zuobox,jackpotwinslot,againbuttonemitter,playbtnemitter,jackpotreset,autoplaybtn,autostopbtn){
+InGameScene.prototype._showResAfterClearTimeout = function(selectBall,unselectBall,fireBall,starOverBall,resList,unselectBG,selectBG,youbox,payoutWhiteWinSlot,payoutWinPrice,wagerxs,xmbaixing,xmduobeilvWin,wagerIncBtn,wagerDecBtn,playAgainBtn,clearAll,revealBtn,curBalance,totalWin,totalWinText,msg,msgX,jackpotlist,jackpotlistori,ifjackpot,jackpotlistupdate,jackpotwinnum,jackpotwinprice,jackpotpriceshow,sanweiupdate,zuobox,jackpotwinslot,againbuttonemitter,playbtnemitter,jackpotreset){
   setTimeout(function(){
     ApiConnector.UpdateBalance(curBalance*100);
     jackpotlistupdate(jackpotlistori,jackpotlist,ifjackpot,wagerxs,sanweiupdate,jackpotwinnum,jackpotwinprice,jackpotpriceshow,zuobox,jackpotwinslot,jackpotreset);
@@ -2262,10 +2249,6 @@ InGameScene.prototype._showResAfterClearTimeout = function(selectBall,unselectBa
     revealBtn.setVisible(false);
     playAgainBtn.setEnable(true);
     playAgainBtn.setVisible(true);
-    autostopbtn.setEnable(false);
-    autostopbtn.getTransform().visible=false;
-    autoplaybtn.setEnable(true);
-    autoplaybtn.getTransform().visible=true;
     againbuttonemitter.enable();
     if(xqu.config.IsMobile()){
       againbuttonemitter.getTransform().position.y = 1700;
@@ -2324,6 +2307,7 @@ InGameScene.prototype._onClickplayAgainBtn = function(e) {
   }
 
   this._msg[2].x=this._msgX+700;
+  console.log("im 2 ")
   TweenLite.to(this._msg[2],0.3,{x:this._msgX});
 
   if(this._firstRun>0){
@@ -2348,7 +2332,7 @@ InGameScene.prototype._onClickplayAgainBtn = function(e) {
     }
     this._curBalance-=this._curWager;
     ApiConnector.UpdateBalance(this._curBalance*100);
-    //xqu.log("InGameScene: Play again clicked");
+    xqu.log("InGameScene: Play again clicked");
 
 
     for(var i=0;i<80;i++){
@@ -2448,10 +2432,10 @@ InGameScene.prototype._setstoptimer = function (autoticker,playagainbtn,autoplay
       }
     });*/
 
-    //console.log("init ticker");
+    console.log("init ticker");
 
     autoticker.add(function(time){
-      //console.log("detecting");
+      console.log("detecting");
       if(playagainbtn.getTransform().alpha==1 && playagainbtn.getTransform().visible==1){
         autoplaybtn.setEnable(true);
         autoplaybtn.getTransform().visible=true;
@@ -2466,8 +2450,7 @@ InGameScene.prototype._setstoptimer = function (autoticker,playagainbtn,autoplay
 
 InGameScene.prototype._autoPlay_cb_startMainGame = function(playLeftAmount) {
   // Show how many play amount left, if you need to current round number, you need to plus 1 on it.
-  //xqu.log('_autoPlay_cb_startMainGame, play left is ' + playLeftAmount);
-  this._autoLeftText.text=(playLeftAmount+1).toString();
+  xqu.log('_autoPlay_cb_startMainGame, play left is ' + playLeftAmount);
   this._ifAutoPlay = true;
   this._autoLeftCount=playLeftAmount;
   this._autoPlayBtn.setEnable(false);
@@ -2514,6 +2497,7 @@ InGameScene.prototype._autoPlay_cb_startMainGame = function(playLeftAmount) {
     }
 
     this._msg[2].x=this._msgX+700;
+    console.log("im 2 ")
     TweenLite.to(this._msg[2],0.3,{x:this._msgX});
 
     if(this._firstRun>0){
@@ -2538,7 +2522,7 @@ InGameScene.prototype._autoPlay_cb_startMainGame = function(playLeftAmount) {
       }
       this._curBalance-=this._curWager;
       ApiConnector.UpdateBalance(this._curBalance*100);
-      //xqu.log("InGameScene: Play again clicked");
+      xqu.log("InGameScene: Play again clicked");
 
 
       for(var i=0;i<80;i++){
@@ -2651,7 +2635,7 @@ InGameScene.prototype._autoPlay_cb_startMainGame = function(playLeftAmount) {
     console.log("select number is "+this._selectNum);
 
     //xqu.audio.playEffect('Snd_Play_Button');
-    //xqu.log("InGameScene: Play button clicked");
+    xqu.log("InGameScene: Play button clicked");
     this._firstRun++;
 
     this._startMainGame();
@@ -2669,15 +2653,11 @@ InGameScene.prototype._autoPlay_cb_startMainGame = function(playLeftAmount) {
 
 // AutoPlayLayer will call this function to let the game know all AutoPlay plays are finished.
 InGameScene.prototype._autoPlay_cb_finishAllPlays = function() {
-  this._ifAutoPlay = false;
+  this._ifAutoPlay = true;
+  this._autoPlayBtn.setEnable(true);
+  this._autoPlayLayer._confirmBtn.setEnable(true);
   this._playAgainBtn.setEnable(true);
   this._clearAll.setEnable(true);
-  this._autoPlayLayer._confirmBtn.setEnable(true);
-  this._autoStopBtn.setEnable(false);
-  this._autoStopBtn.getTransform().visible=false;
-  this._autoPlayBtn.setEnable(true);
-  this._autoPlayBtn.getTransform().visible=true;
-  this._autoLeftText.text ="0";
   if(this._wagerxs[0].visible!=true){
     this._wagerDecBtn.setEnable(true);
   }
@@ -2698,11 +2678,10 @@ InGameScene.prototype._onClickAutoPlayBtn = function(e) {
 }
 
 InGameScene.prototype._onClickAutoStopBtn = function(e) {
-  //console.log("auto stop button click");
+  console.log("auto stop button click");
   this._autoPlayLayer.forceStop();
   this._ifAutoPlay=false;
   this._autoStopBtn.setEnable(false);
-  this._autoLeftText.text ="1";
 
   this._setstoptimer(this._autoTicker,this._playAgainBtn,this._autoPlayBtn);
 }
@@ -2755,7 +2734,7 @@ InGameScene.prototype._onClickPlayBtn = function(e) {
   console.log("select number is "+this._selectNum);
 
   //xqu.audio.playEffect('Snd_Play_Button');
-  //xqu.log("InGameScene: Play button clicked");
+  xqu.log("InGameScene: Play button clicked");
   this._firstRun++;
 
   this._startMainGame();
@@ -2866,7 +2845,7 @@ InGameScene.prototype._generateRes = function() {
   }
 
   selectNum.sort(()=> Math.random() - 0.5);
-  //console.log("select number after shuffle is "+selectNum);
+  console.log("select number after shuffle is "+selectNum);
 
   var input=0;
   var exsit=false;
@@ -3005,7 +2984,7 @@ InGameScene.prototype._generateRes = function() {
     }
   }
 
-  //console.log("final res list "+this._resList);
+  console.log("final res list "+this._resList);
 }
 
 InGameScene.prototype._startTimer = function(reveal,playagain,clearall,wagerxs,wagerIncBtn,wagerDecBtn,jackpotlistupdate,jackpotlistori,jackpotlist,ifjackpot,sanweiupdate,jackpotwinnum,jackpotwinprice,jackpotpriceshow,zuobox,jackpotwinslot,playbtnemitter,firestartmove,staremitter,againbuttonemitter,jackpotreset) {
@@ -3118,7 +3097,7 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
               }
 
 
-              //console.log("curbalance "+curBalance);
+              console.log("curbalance "+curBalance);
               ApiConnector.UpdateBalance(curBalance*100);
               jackpotlistupdate(jackpotlistori,jackpotlist,ifjackpot,wagerxs,sanweiupdate,jackpotwinnum,jackpotwinprice,jackpotpriceshow,zuobox,jackpotwinslot,jackpotreset);
               //if(ifjackpot) jackpotlistupdate(jackpotlistori,jackpotlist,ifjackpot,wagerxs,sanweiupdate,jackpotwinnum,jackpotwinprice,jackpotpriceshow,zuobox,jackpotwinslot);
@@ -3135,21 +3114,14 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
                 clearall.setEnable(false);
                 wagerDecBtn.setEnable(false);
                 wagerIncBtn.setEnable(false);
-                if(autoleftcount<1){
-                  //console.log("show auto after game");
-                  /*autostopbtn.setEnable(false);
-                  autostopbtn.getTransform().visible=false;
-                  autoplaybtn.setEnable(true);
-                  autoplaybtn.getTransform().visible=true;*/
-                }
-              }else{
-                playagain.setEnable(true);
-                playagain.setVisible(true);
-                clearall.setEnable(true);
                 autostopbtn.setEnable(false);
                 autostopbtn.getTransform().visible=false;
                 autoplaybtn.setEnable(true);
                 autoplaybtn.getTransform().visible=true;
+              }else{
+                playagain.setEnable(true);
+                playagain.setVisible(true);
+                clearall.setEnable(true);
                 if(wagerxs[0].visible!=true){
                   wagerDecBtn.setEnable(true);
                 }
@@ -3197,8 +3169,8 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
                 console.log("total win "+totalMultiWager);
                 var right=totalMultiWager % 100;
                 var _balanceL=Math.floor(totalMultiWager/100);
-                //console.log("right  "+right);
-                //console.log("left  "+_balanceL);
+                console.log("right  "+right);
+                console.log("left  "+_balanceL);
 
                 if(_balanceL>999){
                   var l=Math.floor(_balanceL/1000);
@@ -3276,6 +3248,7 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
           console.log("curbalance "+curBalance);
           ApiConnector.UpdateBalance(curBalance*100);
           jackpotlistupdate(jackpotlistori,jackpotlist,ifjackpot,wagerxs,sanweiupdate,jackpotwinnum,jackpotwinprice,jackpotpriceshow,zuobox,jackpotwinslot,jackpotreset);
+          //if(ifjackpot) jackpotlistupdate(jackpotlistori,jackpotlist,ifjackpot,wagerxs,sanweiupdate,jackpotwinnum,jackpotwinprice,jackpotpriceshow,zuobox,jackpotwinslot);
           reveal.setEnable(false);
           reveal.setVisible(false);
           if(ifautoplay){
@@ -3284,21 +3257,14 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
             clearall.setEnable(false);
             wagerDecBtn.setEnable(false);
             wagerIncBtn.setEnable(false);
-            if(autoleftcount<1){
-              //console.log("show auto after game");
-              /*autostopbtn.setEnable(false);
-              autostopbtn.getTransform().visible=false;
-              autoplaybtn.setEnable(true);
-              autoplaybtn.getTransform().visible=true;*/
-            }
-          }else{
-            playagain.setEnable(true);
-            playagain.setVisible(true);
-            clearall.setEnable(true);
             autostopbtn.setEnable(false);
             autostopbtn.getTransform().visible=false;
             autoplaybtn.setEnable(true);
             autoplaybtn.getTransform().visible=true;
+          }else{
+            playagain.setEnable(true);
+            playagain.setVisible(true);
+            clearall.setEnable(true);
             if(wagerxs[0].visible!=true){
               wagerDecBtn.setEnable(true);
             }
@@ -3453,7 +3419,7 @@ InGameScene.prototype._jackpotListUpdate = function(jackpotlistori,jackpotlist,i
         //jackpotlist[i]=jackpotlistori[i];
       }
     }
-    //console.log(jackpotlist);
+    console.log(jackpotlist);
   }else{
     var ranran=Math.floor(Math.random()*10);
     if(ranran<5){
@@ -3472,7 +3438,7 @@ InGameScene.prototype._jackpotListUpdate = function(jackpotlistori,jackpotlist,i
     jackpotlist[4]+=Math.floor(Math.random()*100)+200;
     jackpotlist[5]+=Math.floor(Math.random()*200)+300;
   }
-  //console.log("jackpotlist is "+jackpotlist);
+  console.log("jackpotlist is "+jackpotlist);
   jackpotpriceshow(jackpotlist,jackpotwinnum,jackpotwinprice,sanweiupdate,ifjackpot,wagerxs,zuobox,jackpotwinslot);
 }
 

@@ -144,7 +144,7 @@ AutoPlayLayer.prototype._callMainGameToPlayGame = function () {
 
 
 AutoPlayLayer.prototype._tryToEnableConfirmButton = function() {
-    xqu.log(this._configData);
+    //xqu.log(this._configData);
     if (this._configData.playLeft == -1 || this._configData.balanceLimit == -1 || this._configData.winLimit == -1) {
         return;
     } else {
@@ -535,7 +535,7 @@ AutoPlayConfigButton.prototype.addClickListener = function(fn, scope) {
 }
 
 AutoPlayConfigButton.prototype._onClickButton = function() {
-    xqu.log(this._btn);
+    //xqu.log(this._btn);
     var self = this;
 
     this._btn.texture = this._textureDown;
