@@ -37,6 +37,23 @@ var res = {
 
     // Audio
     Snd_Bg : baseFolder + audioFolder +  "bgMusicLoop" + "." + audioType,
+    Snd_AutoPick_Btn : baseFolder + audioFolder +  "autoPick" + "." + audioType,
+    Snd_WagerUp_Btn : baseFolder + audioFolder +  "wagerUp" + "." + audioType,
+    Snd_WagerDown_Btn : baseFolder + audioFolder +  "wagerDown" + "." + audioType,
+    Snd_Play_Btn : baseFolder + audioFolder +  "playButton" + "." + audioType,
+    Snd_AutoStop_Btn : baseFolder + audioFolder +  "stopAutoPlay" + "." + audioType,
+    Snd_Utility_Btn : baseFolder + audioFolder +  "utilityButton" + "." + audioType,
+    Snd_Bonus1234 : baseFolder + audioFolder +  "bonusStar1234" + "." + audioType,
+    Snd_Bonus5 : baseFolder + audioFolder +  "bonusStar5" + "." + audioType,
+    Snd_ClearAll_Btn : baseFolder + audioFolder +  "clearAll" + "." + audioType,
+    Snd_Meteor : baseFolder + audioFolder +  "meteorBall" + "." + audioType,
+    Snd_SelectBall : baseFolder + audioFolder +  "numberMatch" + "." + audioType,
+    Snd_NumberDown : baseFolder + audioFolder +  "numberSelectOn" + "." + audioType,
+    Snd_NumberUp : baseFolder + audioFolder +  "numberSelectOff" + "." + audioType,
+    Snd_YellowStar_Show : baseFolder + audioFolder +  "starAppear" + "." + audioType,
+    Snd_YellowStar_Move : baseFolder + audioFolder +  "starMove" + "." + audioType,
+    Snd_TryAgain : baseFolder + audioFolder +  "tryAgain" + "." + audioType,
+    Snd_YouWin : baseFolder + audioFolder +  "youWin" + "." + audioType,
 
 
     // Big Picture Scene

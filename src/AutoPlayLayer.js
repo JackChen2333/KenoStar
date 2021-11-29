@@ -124,6 +124,7 @@ AutoPlayLayer.prototype.reset = function() {
 /***********************************************************************************/
 // If Confirm Button is ready, then this will be involked by clicking the confirm button
 AutoPlayLayer.prototype._onClickConfirmButton = function() {
+    xqu.audio.playEffect('Snd_Utility_Btn');
     this._confirmBtn.setEnable(false);
 
     this._playLeftAmt = this._configData.playLeft;
@@ -158,6 +159,7 @@ AutoPlayLayer.prototype._tryToEnableConfirmButton = function() {
 /***********************************************************************************/
 
 AutoPlayLayer.prototype._selectPlayLeftBtn = function(value) {
+    xqu.audio.playEffect('Snd_Utility_Btn');
     this._configData.playLeft = value;
 
     for (var i = 0; i < this._playLeftBtn_Array.length; i++) {
@@ -174,6 +176,7 @@ AutoPlayLayer.prototype._selectPlayLeftBtn = function(value) {
 
 
 AutoPlayLayer.prototype._selectBalanceLimitBtn = function(value) {
+    xqu.audio.playEffect('Snd_Utility_Btn');
     this._configData.balanceLimit = value;
 
     for (var i = 0; i < this._balanceLimitBtn_Array.length; i++) {
@@ -191,6 +194,7 @@ AutoPlayLayer.prototype._selectBalanceLimitBtn = function(value) {
 
 
 AutoPlayLayer.prototype._selectWinLimitBtn = function(value) {
+    xqu.audio.playEffect('Snd_Utility_Btn');
     this._configData.winLimit = value;
     
     for (var i = 0; i < this._winLimitBtn_Array.length; i++) {
@@ -234,6 +238,7 @@ AutoPlayLayer.prototype.showWithBalance = function(currentBalance)
 
 AutoPlayLayer.prototype.hide = function()
 {
+    xqu.audio.playEffect('Snd_Utility_Btn');
     this._container.visible = false;
 };
 

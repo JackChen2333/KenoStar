@@ -169,7 +169,7 @@ SplashScene.prototype._onClick = function(e)
 {
     var self = this;
     // xqu.log("click bg on Splash Screen");
-    xqu.audio.playEffect('Snd_Play_Button');
+    //xqu.audio.playEffect('Snd_Play_Button');
     self._mainGame.callbackGoToInGameScene();
 };
 

@@ -2,7 +2,6 @@
 
 REM Build the standalone version in Standalone folder for GitAction to publish it to the test website
 call build.base.bat
-call build.base.Encrypted.bat
 
 @echo off
 
@@ -24,5 +23,3 @@ echo *************Standalone***************   Finished making Standalone version
 REM PAUSE
 
 @echo on
-
-

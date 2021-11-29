@@ -1506,6 +1506,7 @@ InGameScene.prototype._onClickNumBtn = function(e) {
   //xqu.audio.playEffect('Snd_Play_Button');
   //xqu.log("InGameScene: number button clicked");
   //xqu.log("InGameScene: select count =  "+this._selectCount);
+  xqu.audio.playEffect('Snd_NumberUp');
   this._clearAll.setEnable(true);
 
   if(this._selectCount<10){
@@ -1584,6 +1585,7 @@ InGameScene.prototype._onClickNumBtn = function(e) {
 InGameScene.prototype._onClickNumDownBtn = function(e) {
     //xqu.audio.playEffect('Snd_Play_Button');
     //xqu.log("InGameScene: number down button clicked");
+    xqu.audio.playEffect('Snd_NumberDown');
     this._autoPlayBtn.setEnable(false);
     this._autoPick.setVisible(true);
     this._autoPick.setEnable(true);
@@ -1655,6 +1657,7 @@ InGameScene.prototype._onClickNumDownBtn = function(e) {
 };
 
 InGameScene.prototype._onClickWagerIncBtn = function(e) {
+    xqu.audio.playEffect('Snd_WagerUp_Btn');
     //xqu.audio.playEffect('Snd_Play_Button');
     //xqu.log("InGameScene: wager inc button clicked");
     
@@ -1662,6 +1665,7 @@ InGameScene.prototype._onClickWagerIncBtn = function(e) {
 };
 
 InGameScene.prototype._onClickWagerDecBtn = function(e) {
+    xqu.audio.playEffect('Snd_WagerDown_Btn');
     //xqu.audio.playEffect('Snd_Play_Button');
 
     //xqu.log("InGameScene: wager decrease button clicked");
@@ -1816,8 +1820,8 @@ InGameScene.prototype._wagerUpdate = function(e) {
 }
 
 InGameScene.prototype._onClickclearAllBtn = function(e) {
-    //xqu.audio.playEffect('Snd_Play_Button');
     //xqu.log("InGameScene: clear all  button clicked");
+    xqu.audio.playEffect('Snd_ClearAll_Btn');
 
     if(this._jackpotReset>-1){
       this._jackpotWinNum[this._jackpotReset].text=this._sanweiUpdate(this._jackpotListOri[this._jackpotReset]);
@@ -1930,11 +1934,41 @@ InGameScene.prototype._onClickclearAllBtn = function(e) {
 
 InGameScene.prototype._onClickautoPickBtn = function(e) {
     var self=this;
+    xqu.audio.playEffect('Snd_AutoPick_Btn');
+    this._autoPick.setEnable(false);
 
-    //this._staremitter.anim(1000,1000,200,500,1);
+    var index=0;
+    var selectLeft=10-this._selectCount;
+    var tempA=[];
+    for(var i=0;i<80;i++){
+      if(this._unselectFont[i].visible==true){
+        tempA[index++]=i;
+      }
+    }
+    //xqu.log("tempA "+tempA);
+    var res = [];
+    for(var i = 0; i < selectLeft; ++i) {
+        var random = Math.floor(Math.random() * tempA.length);
+        res.push(tempA[random]);
+        tempA.splice(random,1);
+    }
+    xqu.log("res "+res);
 
+    for(var i=0;i<res.length;i++){
+      this._startAuto(res[i],this._unselectBG,this._unselectFont,this._selectBG,this._selectFont,i);
+    }
 
-    //xqu.audio.playEffect('Snd_Play_Button');
+    /*for(var i=0;i<res.length;i++){
+      this._unselectBG[res[i]].setVisible(false);
+      this._unselectBG[res[i]].setEnable(false);
+      this._unselectFont[res[i]].visible=false;
+      this._selectBG[res[i]].setVisible(true);
+      this._selectBG[res[i]].setEnable(true);
+      this._selectFont[res[i]].visible=true;
+    }*/
+    this._selectCount=10;
+
+    TweenMax.delayedCall(0.55, function(){
     //xqu.log("InGameScene: auto pick button clicked");
     this._autoPlayBtn.setEnable(true);
     this._againBtnEmitter.enable();
@@ -1943,15 +1977,15 @@ InGameScene.prototype._onClickautoPickBtn = function(e) {
     }else{
       this._againBtnEmitter.getTransform().position.y = 1150;
     }
+    //this._autoPick.setEnable(false);
     this._autoPick.setVisible(false);
-    this._autoPick.setEnable(false);
     this._playBtn.setVisible(true);
     this._playBtn.setEnable(true);
     this._clearAll.setEnable(true);
     this._ifOverRed=false;
     this._ifOverWhite=false;
     
-    var index=0;
+    /*var index=0;
     var selectLeft=10-this._selectCount;
     var tempA=[];
     for(var i=0;i<80;i++){
@@ -1975,13 +2009,27 @@ InGameScene.prototype._onClickautoPickBtn = function(e) {
       this._selectBG[res[i]].setEnable(true);
       this._selectFont[res[i]].visible=true;
     }
-    this._selectCount=10;
+    this._selectCount=10;*/
 
     this._msg[0].x=this._msgX;
     TweenLite.to(this._msg[0],0.3,{x:this._msgX-700});
     this._msg[1].x=this._msgX+700,
     TweenLite.to(this._msg[1],0.3,{x:this._msgX});
-};
+
+    }, null, self);
+}
+
+InGameScene.prototype._startAuto = function(res,unselectBG,unselectFont,selectBG,selectFont,timer) {
+  TweenMax.delayedCall(0.05*timer, function(){
+    unselectBG[res].setVisible(false);
+    unselectBG[res].setEnable(false);
+    unselectFont[res].visible=false;
+    selectBG[res].setVisible(true);
+    selectBG[res].setEnable(true);
+    selectFont[res].visible=true;
+  }, null, self);
+}
+
 
 InGameScene.prototype._onClickRevealBtn = function(e) {
     //xqu.audio.playEffect('Snd_Play_Button');
@@ -2092,9 +2140,11 @@ InGameScene.prototype._showResAfterClearTimeout = function(selectBall,unselectBa
     jackpotlistupdate(jackpotlistori,jackpotlist,ifjackpot,wagerxs,sanweiupdate,jackpotwinnum,jackpotwinprice,jackpotpriceshow,zuobox,jackpotwinslot,jackpotreset);
     TweenLite.to(msg[2],0.3,{x:msgX-700});
     if(totalWin>0){
+      xqu.audio.playEffect('Snd_YouWin');
       msg[3].x=msgX+700;
       TweenLite.to(msg[3],0.3,{x:msgX});
     }else{
+      xqu.audio.playEffect('Snd_TryAgain');
       msg[4].x=msgX+700;
       TweenLite.to(msg[4],0.3,{x:msgX});
     }
@@ -2285,6 +2335,8 @@ InGameScene.prototype._showResAfterClearTimeout = function(selectBall,unselectBa
 }
 
 InGameScene.prototype._onClickplayAgainBtn = function(e) {
+  var self=this;
+  xqu.audio.playEffect('Snd_Play_Btn');
     //xqu.audio.playEffect('Snd_Play_Button');
   if(this._jackpotReset>-1){
       this._jackpotWinNum[this._jackpotReset].text=this._sanweiUpdate(this._jackpotListOri[this._jackpotReset]);
@@ -2366,6 +2418,7 @@ InGameScene.prototype._onClickplayAgainBtn = function(e) {
       this._unselectBG[this._selectNum[i]].setVisible(false);
       this._unselectFont[this._selectNum[i]].visible=false;
       this._selectBG[this._selectNum[i]].setVisible(true);
+      this._selectBG[this._selectNum[i]].setAlpha(1);
       this._selectFont[this._selectNum[i]].visible=true;
     }
 
@@ -2401,27 +2454,35 @@ InGameScene.prototype._onClickplayAgainBtn = function(e) {
       //this._fireBall[i].visible=true;
     }
     this._playAgainBtn.setEnable(false);
-    this._playAgainBtn.setVisible(false);
-    this._revealBtn.setEnable(true);
-    this._revealBtn.setVisible(true);
+    //this._playAgainBtn.setVisible(false);
+    this._revealBtn.setEnable(false);
+    this._revealBtn.setVisible(false);
     /*this._autoPick.setEnable(true);
     this._autoPick.setVisible(true);*/
   }
 
   //this._generateRes();
-  this._startMainGame();
+  TweenMax.delayedCall(2.5, function(){
+    this._playBtn.setVisible(false);
+    this._playAgainBtn.setVisible(false);
+    this._revealBtn.setEnable(true);
+    this._revealBtn.setVisible(true);
+    self._startMainGame();
+  }, null, self);
+  //this._startMainGame();
   this._wagerIncBtn.setEnable(false);
   this._wagerDecBtn.setEnable(false);
   this._clearAll.setEnable(false);
   this._playBtn.setEnable(false);
-  this._playBtn.setVisible(false);
-  this._revealBtn.setEnable(true);
-  this._revealBtn.setVisible(true);
+  //this._playBtn.setVisible(false);
+  //this._revealBtn.setEnable(true);
+  //this._revealBtn.setVisible(true);
 
 }
 
 InGameScene.prototype._onClickHelpBtn = function(e) {
-    xqu.audio.playEffect('Snd_Play_Button');
+    xqu.audio.playEffect('Snd_Utility_Btn');
+    //xqu.audio.playEffect('Snd_Play_Button');
     ApiConnector.ShowHelpScreen();
 }
 
@@ -2693,12 +2754,14 @@ InGameScene.prototype._autoPlay_cb_finishAllPlays = function() {
 }
 
 InGameScene.prototype._onClickAutoPlayBtn = function(e) {
+  xqu.audio.playEffect('Snd_Utility_Btn');
   this._autoTicker.stop();
   this._autoPlayLayer.getTransform().visible=true;
 }
 
 InGameScene.prototype._onClickAutoStopBtn = function(e) {
   //console.log("auto stop button click");
+  xqu.audio.playEffect('Snd_AutoStop_Btn');
   this._autoPlayLayer.forceStop();
   this._ifAutoPlay=false;
   this._autoStopBtn.setEnable(false);
@@ -2708,6 +2771,7 @@ InGameScene.prototype._onClickAutoStopBtn = function(e) {
 }
 
 InGameScene.prototype._onClickPlayBtn = function(e) {
+  xqu.audio.playEffect('Snd_Play_Btn');
   var self = this;
   if (!this._playBtnEnabled) {
     return;
@@ -2758,15 +2822,20 @@ InGameScene.prototype._onClickPlayBtn = function(e) {
   //xqu.log("InGameScene: Play button clicked");
   this._firstRun++;
 
-  this._startMainGame();
+  //this._startMainGame();
+  TweenMax.delayedCall(2.5, function(){
+    this._playBtn.setVisible(false);
+    this._revealBtn.setEnable(true);
+    this._revealBtn.setVisible(true);
+    self._startMainGame();
+  }, null, self);
+
   this._wagerIncBtn.setEnable(false);
   this._wagerDecBtn.setEnable(false);
   this._clearAll.setEnable(false);
   this._playBtn.setEnable(false);
-  this._playBtn.setVisible(false);
-  this._revealBtn.setEnable(true);
-  this._revealBtn.setVisible(true);
 };
+
 
 InGameScene.prototype._firestartmove = function(startest,staremitter) {
   setTimeout(function(){
@@ -2777,6 +2846,7 @@ InGameScene.prototype._firestartmove = function(startest,staremitter) {
 
 
 InGameScene.prototype._startMainGame = function(e) {
+  var self=this;
   xqu.log("InGameScene: game start");
   this._selectNumTrigger=true;
   for(var i=0;i<this._wagerxs.length;i++){
@@ -3037,6 +3107,8 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
     fireBall[resList[index][0]].visible=true;
     //fireBallTween[index]=TweenLite.to(fireBall[resList[index][0]],0.3,{x:unselectFont[resList[index][0]].x+48,y:unselectFont[resList[index][0]].y-28});
     fireBallTween[index]=TweenLite.to(fireBall[resList[index][0]],0.5,{x:unselectFont[resList[index][0]].x+48,y:unselectFont[resList[index][0]].y-28});
+    xqu.audio.playEffect('Snd_Meteor');
+
     setTimeout(function(){
       fireBall[resList[index][0]].visible=false;
       if(resList[index][1]==0 || resList[index][1]==1){
@@ -3045,6 +3117,7 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
       }else if(resList[index][1]==2 || resList[index][1]==3){
         selectBG[resList[index][0]].setVisible(false);
         selectBall[resList[index][0]].visible=true;
+        xqu.audio.playEffect('Snd_SelectBall');
       }
 
       if(resList[index][2]>-1){
@@ -3082,6 +3155,7 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
         var curStarIndex=-1;
         for(var j=0;j<5;j++){
           if(starOverBall[j].x==unselectFont[resList[index][0]].x+25 && starOverBall[j].y==unselectFont[resList[index][0]].y-10){
+            xqu.audio.playEffect('Snd_YellowStar_Show');
             starOverBall[j].visible=true;
             playbtnemitter[j]._setPos(starOverBall[j].x,starOverBall[j].y);
 
@@ -3097,6 +3171,7 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
         var starMoveTimer=0.5;
         playbtnemitter[curStarIndex].animHide(0,0,playbtnemitter[curStarIndex]._pivotX,playbtnemitter[curStarIndex]._pivotY,0.1);
         setTimeout(function(){
+          xqu.audio.playEffect('Snd_YellowStar_Move');
           TweenLite.to(starOverBall[curStarIndex],starMoveTimer,{x:starOverBallPos[curStarIndex][0],y:starOverBallPos[curStarIndex][1]});
           playbtnemitter[curStarIndex].anim(playbtnemitter[curStarIndex]._pivotX,playbtnemitter[curStarIndex]._pivotY,starOverBallPos[curStarIndex][0],starOverBallPos[curStarIndex][1],starMoveTimer);
 
@@ -3105,17 +3180,27 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
             playbtnemitter[curStarIndex].disable();
             /*playbtnemitter[curStarIndex].getTransform().position.x = -500;
             playbtnemitter[curStarIndex].getTransform().position.y = -500;*/
+
             xmbaixing[curStarIndex].visible=true;
             xmduobeilvWin[curStarIndex].visible=true;
+            if(curStarIndex<4){
+              xqu.audio.playEffect('Snd_Bonus1234');
+            }else{
+              xqu.audio.playEffect('Snd_Bonus5');
+            }
+
             if(index==19){
-              TweenLite.to(msg[2],0.3,{x:msgX-700});
-              if(totalWin>0){
-                msg[3].x=msgX+700;
-                TweenLite.to(msg[3],0.3,{x:msgX});
-              }else{
-                msg[4].x=msgX+700;
-                TweenLite.to(msg[4],0.3,{x:msgX});
-              }
+              setTimeout(function(){
+                if(totalWin>0){
+                  xqu.audio.playEffect('Snd_YouWin');
+                  msg[3].x=msgX+700;
+                  TweenLite.to(msg[3],0.3,{x:msgX});
+                }else{
+                  xqu.audio.playEffect('Snd_TryAgain');
+                  msg[4].x=msgX+700;
+                  TweenLite.to(msg[4],0.3,{x:msgX});
+                }
+                TweenLite.to(msg[2],0.3,{x:msgX-700});
 
 
               //console.log("curbalance "+curBalance);
@@ -3256,6 +3341,7 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
 
               }
 
+              },1000);
 
 
             }
@@ -3264,11 +3350,15 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
         },500);
       }else{
         if(index==19){
+          setTimeout(function(){
+
           TweenLite.to(msg[2],0.3,{x:msgX-700});
           if(totalWin>0){
+            xqu.audio.playEffect('Snd_YouWin');
             msg[3].x=msgX+700;
             TweenLite.to(msg[3],0.3,{x:msgX});
           }else{
+            xqu.audio.playEffect('Snd_TryAgain');
             msg[4].x=msgX+700;
             TweenLite.to(msg[4],0.3,{x:msgX});
           }
@@ -3406,6 +3496,7 @@ InGameScene.prototype._startAnim = function(index,timer,resList,fireBall,showNum
           }
 
 
+          },1000);
         }
       }
 
@@ -3604,4 +3695,5 @@ InGameScene.prototype._starRunning = function(a,size,timer){
 
 */
 }
+
 

@@ -1,0 +1,1081 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\xiechen\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'javascript-obfuscator',
+1 verbose cli   '--save',
+1 verbose cli   '-g'
+1 verbose cli ]
+2 info using npm@3.10.6
+3 info using node@v13.14.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData javascript-obfuscator
+8 silly fetchNamedPackageData javascript-obfuscator
+9 silly mapToRegistry name javascript-obfuscator
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'javascript-obfuscator',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'javascript-obfuscator',
+12 silly mapToRegistry   name: 'javascript-obfuscator',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag'
+12 silly mapToRegistry }
+13 silly mapToRegistry uri https://registry.npmjs.org/javascript-obfuscator
+14 verbose request uri https://registry.npmjs.org/javascript-obfuscator
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 10:31:02 AM
+17 verbose request id 84608e9573e7b56b
+18 verbose etag W/"8d8e37b4de7b1ef6d672647a9c57558f"
+19 verbose lastModified Sun, 17 Oct 2021 16:23:27 GMT
+20 http request GET https://registry.npmjs.org/javascript-obfuscator
+21 http 304 https://registry.npmjs.org/javascript-obfuscator
+22 verbose headers {
+22 verbose headers   date: 'Wed, 24 Nov 2021 15:31:03 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'cf-ray': '6b33ae995ca218b4-EWR',
+22 verbose headers   'cache-control': 'public, max-age=300',
+22 verbose headers   etag: '"8d8e37b4de7b1ef6d672647a9c57558f"',
+22 verbose headers   'last-modified': 'Sun, 17 Oct 2021 16:23:27 GMT',
+22 verbose headers   vary: 'Accept-Encoding',
+22 verbose headers   'cf-cache-status': 'REVALIDATED',
+22 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 verbose headers   'x-amz-replication-status': 'COMPLETED',
+22 verbose headers   server: 'cloudflare'
+22 verbose headers }
+23 silly get cb [
+23 silly get   304,
+23 silly get   {
+23 silly get     date: 'Wed, 24 Nov 2021 15:31:03 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'cf-ray': '6b33ae995ca218b4-EWR',
+23 silly get     'cache-control': 'public, max-age=300',
+23 silly get     etag: '"8d8e37b4de7b1ef6d672647a9c57558f"',
+23 silly get     'last-modified': 'Sun, 17 Oct 2021 16:23:27 GMT',
+23 silly get     vary: 'Accept-Encoding',
+23 silly get     'cf-cache-status': 'REVALIDATED',
+23 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 silly get     'x-amz-replication-status': 'COMPLETED',
+23 silly get     server: 'cloudflare'
+23 silly get   }
+23 silly get ]
+24 verbose etag https://registry.npmjs.org/javascript-obfuscator from cache
+25 verbose get saving javascript-obfuscator to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\javascript-obfuscator\.cache.json
+26 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule javascript-obfuscator@3.0.0 checking installable status
+40 silly cache add args [ 'javascript-obfuscator', null ]
+41 verbose cache add spec javascript-obfuscator
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'javascript-obfuscator',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'javascript-obfuscator',
+42 silly cache add   name: 'javascript-obfuscator',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag'
+42 silly cache add }
+43 silly addNamed javascript-obfuscator@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for javascript-obfuscator
+45 info addNameTag [ 'javascript-obfuscator', 'latest' ]
+46 silly mapToRegistry name javascript-obfuscator
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'javascript-obfuscator',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'javascript-obfuscator',
+49 silly mapToRegistry   name: 'javascript-obfuscator',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag'
+49 silly mapToRegistry }
+50 silly mapToRegistry uri https://registry.npmjs.org/javascript-obfuscator
+51 verbose addNameTag registry:https://registry.npmjs.org/javascript-obfuscator not in flight; fetching
+52 verbose get https://registry.npmjs.org/javascript-obfuscator not expired, no request
+53 silly addNameTag next cb for javascript-obfuscator with tag latest
+54 silly addNamed javascript-obfuscator@3.0.0
+55 verbose addNamed "3.0.0" is a plain semver version for javascript-obfuscator
+56 silly cache afterAdd javascript-obfuscator@3.0.0
+57 verbose afterAdd C:\Users\xiechen\AppData\Roaming\npm-cache\javascript-obfuscator\3.0.0\package\package.json not in flight; writing
+58 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+59 verbose afterAdd C:\Users\xiechen\AppData\Roaming\npm-cache\javascript-obfuscator\3.0.0\package\package.json written
+60 silly fetchNamedPackageData @javascript-obfuscator/escodegen
+61 silly mapToRegistry name @javascript-obfuscator/escodegen
+62 silly mapToRegistry scope (from package name) @javascript-obfuscator
+63 verbose mapToRegistry no registry URL found in name for scope @javascript-obfuscator
+64 silly mapToRegistry using default registry
+65 silly mapToRegistry registry https://registry.npmjs.org/
+66 silly mapToRegistry data Result {
+66 silly mapToRegistry   raw: '@javascript-obfuscator/escodegen',
+66 silly mapToRegistry   scope: '@javascript-obfuscator',
+66 silly mapToRegistry   escapedName: '@javascript-obfuscator%2fescodegen',
+66 silly mapToRegistry   name: '@javascript-obfuscator/escodegen',
+66 silly mapToRegistry   rawSpec: '',
+66 silly mapToRegistry   spec: 'latest',
+66 silly mapToRegistry   type: 'tag'
+66 silly mapToRegistry }
+67 silly mapToRegistry uri https://registry.npmjs.org/@javascript-obfuscator%2fescodegen
+68 silly fetchNamedPackageData @javascript-obfuscator/estraverse
+69 silly mapToRegistry name @javascript-obfuscator/estraverse
+70 silly mapToRegistry scope (from package name) @javascript-obfuscator
+71 verbose mapToRegistry no registry URL found in name for scope @javascript-obfuscator
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry https://registry.npmjs.org/
+74 silly mapToRegistry data Result {
+74 silly mapToRegistry   raw: '@javascript-obfuscator/estraverse',
+74 silly mapToRegistry   scope: '@javascript-obfuscator',
+74 silly mapToRegistry   escapedName: '@javascript-obfuscator%2festraverse',
+74 silly mapToRegistry   name: '@javascript-obfuscator/estraverse',
+74 silly mapToRegistry   rawSpec: '',
+74 silly mapToRegistry   spec: 'latest',
+74 silly mapToRegistry   type: 'tag'
+74 silly mapToRegistry }
+75 silly mapToRegistry uri https://registry.npmjs.org/@javascript-obfuscator%2festraverse
+76 silly fetchNamedPackageData @nuxtjs/opencollective
+77 silly mapToRegistry name @nuxtjs/opencollective
+78 silly mapToRegistry scope (from package name) @nuxtjs
+79 verbose mapToRegistry no registry URL found in name for scope @nuxtjs
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry data Result {
+82 silly mapToRegistry   raw: '@nuxtjs/opencollective',
+82 silly mapToRegistry   scope: '@nuxtjs',
+82 silly mapToRegistry   escapedName: '@nuxtjs%2fopencollective',
+82 silly mapToRegistry   name: '@nuxtjs/opencollective',
+82 silly mapToRegistry   rawSpec: '',
+82 silly mapToRegistry   spec: 'latest',
+82 silly mapToRegistry   type: 'tag'
+82 silly mapToRegistry }
+83 silly mapToRegistry uri https://registry.npmjs.org/@nuxtjs%2fopencollective
+84 silly fetchNamedPackageData acorn
+85 silly mapToRegistry name acorn
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry data Result {
+88 silly mapToRegistry   raw: 'acorn',
+88 silly mapToRegistry   scope: null,
+88 silly mapToRegistry   escapedName: 'acorn',
+88 silly mapToRegistry   name: 'acorn',
+88 silly mapToRegistry   rawSpec: '',
+88 silly mapToRegistry   spec: 'latest',
+88 silly mapToRegistry   type: 'tag'
+88 silly mapToRegistry }
+89 silly mapToRegistry uri https://registry.npmjs.org/acorn
+90 silly fetchNamedPackageData assert
+91 silly mapToRegistry name assert
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry data Result {
+94 silly mapToRegistry   raw: 'assert',
+94 silly mapToRegistry   scope: null,
+94 silly mapToRegistry   escapedName: 'assert',
+94 silly mapToRegistry   name: 'assert',
+94 silly mapToRegistry   rawSpec: '',
+94 silly mapToRegistry   spec: 'latest',
+94 silly mapToRegistry   type: 'tag'
+94 silly mapToRegistry }
+95 silly mapToRegistry uri https://registry.npmjs.org/assert
+96 silly fetchNamedPackageData chalk
+97 silly mapToRegistry name chalk
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: 'chalk',
+100 silly mapToRegistry   scope: null,
+100 silly mapToRegistry   escapedName: 'chalk',
+100 silly mapToRegistry   name: 'chalk',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag'
+100 silly mapToRegistry }
+101 silly mapToRegistry uri https://registry.npmjs.org/chalk
+102 silly fetchNamedPackageData chance
+103 silly mapToRegistry name chance
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry data Result {
+106 silly mapToRegistry   raw: 'chance',
+106 silly mapToRegistry   scope: null,
+106 silly mapToRegistry   escapedName: 'chance',
+106 silly mapToRegistry   name: 'chance',
+106 silly mapToRegistry   rawSpec: '',
+106 silly mapToRegistry   spec: 'latest',
+106 silly mapToRegistry   type: 'tag'
+106 silly mapToRegistry }
+107 silly mapToRegistry uri https://registry.npmjs.org/chance
+108 silly fetchNamedPackageData class-validator
+109 silly mapToRegistry name class-validator
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry data Result {
+112 silly mapToRegistry   raw: 'class-validator',
+112 silly mapToRegistry   scope: null,
+112 silly mapToRegistry   escapedName: 'class-validator',
+112 silly mapToRegistry   name: 'class-validator',
+112 silly mapToRegistry   rawSpec: '',
+112 silly mapToRegistry   spec: 'latest',
+112 silly mapToRegistry   type: 'tag'
+112 silly mapToRegistry }
+113 silly mapToRegistry uri https://registry.npmjs.org/class-validator
+114 silly fetchNamedPackageData commander
+115 silly mapToRegistry name commander
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry data Result {
+118 silly mapToRegistry   raw: 'commander',
+118 silly mapToRegistry   scope: null,
+118 silly mapToRegistry   escapedName: 'commander',
+118 silly mapToRegistry   name: 'commander',
+118 silly mapToRegistry   rawSpec: '',
+118 silly mapToRegistry   spec: 'latest',
+118 silly mapToRegistry   type: 'tag'
+118 silly mapToRegistry }
+119 silly mapToRegistry uri https://registry.npmjs.org/commander
+120 silly fetchNamedPackageData eslint-scope
+121 silly mapToRegistry name eslint-scope
+122 silly mapToRegistry using default registry
+123 silly mapToRegistry registry https://registry.npmjs.org/
+124 silly mapToRegistry data Result {
+124 silly mapToRegistry   raw: 'eslint-scope',
+124 silly mapToRegistry   scope: null,
+124 silly mapToRegistry   escapedName: 'eslint-scope',
+124 silly mapToRegistry   name: 'eslint-scope',
+124 silly mapToRegistry   rawSpec: '',
+124 silly mapToRegistry   spec: 'latest',
+124 silly mapToRegistry   type: 'tag'
+124 silly mapToRegistry }
+125 silly mapToRegistry uri https://registry.npmjs.org/eslint-scope
+126 silly fetchNamedPackageData fast-deep-equal
+127 silly mapToRegistry name fast-deep-equal
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry https://registry.npmjs.org/
+130 silly mapToRegistry data Result {
+130 silly mapToRegistry   raw: 'fast-deep-equal',
+130 silly mapToRegistry   scope: null,
+130 silly mapToRegistry   escapedName: 'fast-deep-equal',
+130 silly mapToRegistry   name: 'fast-deep-equal',
+130 silly mapToRegistry   rawSpec: '',
+130 silly mapToRegistry   spec: 'latest',
+130 silly mapToRegistry   type: 'tag'
+130 silly mapToRegistry }
+131 silly mapToRegistry uri https://registry.npmjs.org/fast-deep-equal
+132 silly fetchNamedPackageData inversify
+133 silly mapToRegistry name inversify
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry data Result {
+136 silly mapToRegistry   raw: 'inversify',
+136 silly mapToRegistry   scope: null,
+136 silly mapToRegistry   escapedName: 'inversify',
+136 silly mapToRegistry   name: 'inversify',
+136 silly mapToRegistry   rawSpec: '',
+136 silly mapToRegistry   spec: 'latest',
+136 silly mapToRegistry   type: 'tag'
+136 silly mapToRegistry }
+137 silly mapToRegistry uri https://registry.npmjs.org/inversify
+138 silly fetchNamedPackageData js-string-escape
+139 silly mapToRegistry name js-string-escape
+140 silly mapToRegistry using default registry
+141 silly mapToRegistry registry https://registry.npmjs.org/
+142 silly mapToRegistry data Result {
+142 silly mapToRegistry   raw: 'js-string-escape',
+142 silly mapToRegistry   scope: null,
+142 silly mapToRegistry   escapedName: 'js-string-escape',
+142 silly mapToRegistry   name: 'js-string-escape',
+142 silly mapToRegistry   rawSpec: '',
+142 silly mapToRegistry   spec: 'latest',
+142 silly mapToRegistry   type: 'tag'
+142 silly mapToRegistry }
+143 silly mapToRegistry uri https://registry.npmjs.org/js-string-escape
+144 silly fetchNamedPackageData md5
+145 silly mapToRegistry name md5
+146 silly mapToRegistry using default registry
+147 silly mapToRegistry registry https://registry.npmjs.org/
+148 silly mapToRegistry data Result {
+148 silly mapToRegistry   raw: 'md5',
+148 silly mapToRegistry   scope: null,
+148 silly mapToRegistry   escapedName: 'md5',
+148 silly mapToRegistry   name: 'md5',
+148 silly mapToRegistry   rawSpec: '',
+148 silly mapToRegistry   spec: 'latest',
+148 silly mapToRegistry   type: 'tag'
+148 silly mapToRegistry }
+149 silly mapToRegistry uri https://registry.npmjs.org/md5
+150 silly fetchNamedPackageData mkdirp
+151 silly mapToRegistry name mkdirp
+152 silly mapToRegistry using default registry
+153 silly mapToRegistry registry https://registry.npmjs.org/
+154 silly mapToRegistry data Result {
+154 silly mapToRegistry   raw: 'mkdirp',
+154 silly mapToRegistry   scope: null,
+154 silly mapToRegistry   escapedName: 'mkdirp',
+154 silly mapToRegistry   name: 'mkdirp',
+154 silly mapToRegistry   rawSpec: '',
+154 silly mapToRegistry   spec: 'latest',
+154 silly mapToRegistry   type: 'tag'
+154 silly mapToRegistry }
+155 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+156 silly fetchNamedPackageData multimatch
+157 silly mapToRegistry name multimatch
+158 silly mapToRegistry using default registry
+159 silly mapToRegistry registry https://registry.npmjs.org/
+160 silly mapToRegistry data Result {
+160 silly mapToRegistry   raw: 'multimatch',
+160 silly mapToRegistry   scope: null,
+160 silly mapToRegistry   escapedName: 'multimatch',
+160 silly mapToRegistry   name: 'multimatch',
+160 silly mapToRegistry   rawSpec: '',
+160 silly mapToRegistry   spec: 'latest',
+160 silly mapToRegistry   type: 'tag'
+160 silly mapToRegistry }
+161 silly mapToRegistry uri https://registry.npmjs.org/multimatch
+162 silly fetchNamedPackageData process
+163 silly mapToRegistry name process
+164 silly mapToRegistry using default registry
+165 silly mapToRegistry registry https://registry.npmjs.org/
+166 silly mapToRegistry data Result {
+166 silly mapToRegistry   raw: 'process',
+166 silly mapToRegistry   scope: null,
+166 silly mapToRegistry   escapedName: 'process',
+166 silly mapToRegistry   name: 'process',
+166 silly mapToRegistry   rawSpec: '',
+166 silly mapToRegistry   spec: 'latest',
+166 silly mapToRegistry   type: 'tag'
+166 silly mapToRegistry }
+167 silly mapToRegistry uri https://registry.npmjs.org/process
+168 silly fetchNamedPackageData reflect-metadata
+169 silly mapToRegistry name reflect-metadata
+170 silly mapToRegistry using default registry
+171 silly mapToRegistry registry https://registry.npmjs.org/
+172 silly mapToRegistry data Result {
+172 silly mapToRegistry   raw: 'reflect-metadata',
+172 silly mapToRegistry   scope: null,
+172 silly mapToRegistry   escapedName: 'reflect-metadata',
+172 silly mapToRegistry   name: 'reflect-metadata',
+172 silly mapToRegistry   rawSpec: '',
+172 silly mapToRegistry   spec: 'latest',
+172 silly mapToRegistry   type: 'tag'
+172 silly mapToRegistry }
+173 silly mapToRegistry uri https://registry.npmjs.org/reflect-metadata
+174 silly fetchNamedPackageData source-map-support
+175 silly mapToRegistry name source-map-support
+176 silly mapToRegistry using default registry
+177 silly mapToRegistry registry https://registry.npmjs.org/
+178 silly mapToRegistry data Result {
+178 silly mapToRegistry   raw: 'source-map-support',
+178 silly mapToRegistry   scope: null,
+178 silly mapToRegistry   escapedName: 'source-map-support',
+178 silly mapToRegistry   name: 'source-map-support',
+178 silly mapToRegistry   rawSpec: '',
+178 silly mapToRegistry   spec: 'latest',
+178 silly mapToRegistry   type: 'tag'
+178 silly mapToRegistry }
+179 silly mapToRegistry uri https://registry.npmjs.org/source-map-support
+180 silly fetchNamedPackageData string-template
+181 silly mapToRegistry name string-template
+182 silly mapToRegistry using default registry
+183 silly mapToRegistry registry https://registry.npmjs.org/
+184 silly mapToRegistry data Result {
+184 silly mapToRegistry   raw: 'string-template',
+184 silly mapToRegistry   scope: null,
+184 silly mapToRegistry   escapedName: 'string-template',
+184 silly mapToRegistry   name: 'string-template',
+184 silly mapToRegistry   rawSpec: '',
+184 silly mapToRegistry   spec: 'latest',
+184 silly mapToRegistry   type: 'tag'
+184 silly mapToRegistry }
+185 silly mapToRegistry uri https://registry.npmjs.org/string-template
+186 silly fetchNamedPackageData stringz
+187 silly mapToRegistry name stringz
+188 silly mapToRegistry using default registry
+189 silly mapToRegistry registry https://registry.npmjs.org/
+190 silly mapToRegistry data Result {
+190 silly mapToRegistry   raw: 'stringz',
+190 silly mapToRegistry   scope: null,
+190 silly mapToRegistry   escapedName: 'stringz',
+190 silly mapToRegistry   name: 'stringz',
+190 silly mapToRegistry   rawSpec: '',
+190 silly mapToRegistry   spec: 'latest',
+190 silly mapToRegistry   type: 'tag'
+190 silly mapToRegistry }
+191 silly mapToRegistry uri https://registry.npmjs.org/stringz
+192 silly fetchNamedPackageData tslib
+193 silly mapToRegistry name tslib
+194 silly mapToRegistry using default registry
+195 silly mapToRegistry registry https://registry.npmjs.org/
+196 silly mapToRegistry data Result {
+196 silly mapToRegistry   raw: 'tslib',
+196 silly mapToRegistry   scope: null,
+196 silly mapToRegistry   escapedName: 'tslib',
+196 silly mapToRegistry   name: 'tslib',
+196 silly mapToRegistry   rawSpec: '',
+196 silly mapToRegistry   spec: 'latest',
+196 silly mapToRegistry   type: 'tag'
+196 silly mapToRegistry }
+197 silly mapToRegistry uri https://registry.npmjs.org/tslib
+198 verbose request uri https://registry.npmjs.org/acorn
+199 verbose request no auth needed
+200 info attempt registry request try #1 at 10:31:03 AM
+201 verbose etag W/"93cdd941749d1229df45460140d97d38"
+202 verbose lastModified Thu, 18 Nov 2021 08:48:05 GMT
+203 http request GET https://registry.npmjs.org/acorn
+204 verbose request uri https://registry.npmjs.org/@javascript-obfuscator%2festraverse
+205 verbose request no auth needed
+206 info attempt registry request try #1 at 10:31:03 AM
+207 verbose etag W/"c54134e3ff6951471c9e8e8a86403946"
+208 verbose lastModified Sun, 02 May 2021 14:14:44 GMT
+209 http request GET https://registry.npmjs.org/@javascript-obfuscator%2festraverse
+210 verbose request uri https://registry.npmjs.org/@nuxtjs%2fopencollective
+211 verbose request no auth needed
+212 info attempt registry request try #1 at 10:31:03 AM
+213 verbose etag W/"8d47a7062be71b112a2a7c9a554f85bc"
+214 verbose lastModified Wed, 02 Jun 2021 09:36:07 GMT
+215 http request GET https://registry.npmjs.org/@nuxtjs%2fopencollective
+216 verbose request uri https://registry.npmjs.org/@javascript-obfuscator%2fescodegen
+217 verbose request no auth needed
+218 info attempt registry request try #1 at 10:31:03 AM
+219 verbose etag W/"a2deed3d66bd12ebc87c639f793d3cf8"
+220 verbose lastModified Sat, 16 Oct 2021 15:27:19 GMT
+221 http request GET https://registry.npmjs.org/@javascript-obfuscator%2fescodegen
+222 verbose request uri https://registry.npmjs.org/fast-deep-equal
+223 verbose request no auth needed
+224 info attempt registry request try #1 at 10:31:03 AM
+225 verbose etag W/"50e58e96ce1ae757a0bd8e41b58513be"
+226 verbose lastModified Mon, 08 Jun 2020 07:27:32 GMT
+227 http request GET https://registry.npmjs.org/fast-deep-equal
+228 verbose request uri https://registry.npmjs.org/assert
+229 verbose request no auth needed
+230 info attempt registry request try #1 at 10:31:03 AM
+231 verbose etag W/"5f9600ea8f6d4cbbabe9479d85438529"
+232 verbose lastModified Thu, 09 Apr 2020 09:52:37 GMT
+233 http request GET https://registry.npmjs.org/assert
+234 verbose request uri https://registry.npmjs.org/chalk
+235 verbose request no auth needed
+236 info attempt registry request try #1 at 10:31:03 AM
+237 verbose etag W/"3bae04081d35b6b81d843f781651c917"
+238 verbose lastModified Mon, 08 Nov 2021 00:57:36 GMT
+239 http request GET https://registry.npmjs.org/chalk
+240 verbose request uri https://registry.npmjs.org/class-validator
+241 verbose request no auth needed
+242 info attempt registry request try #1 at 10:31:03 AM
+243 verbose etag W/"745bb66d00c1f95a46d11cb6a43a1202"
+244 verbose lastModified Sat, 20 Nov 2021 11:28:25 GMT
+245 http request GET https://registry.npmjs.org/class-validator
+246 verbose request uri https://registry.npmjs.org/inversify
+247 verbose request no auth needed
+248 info attempt registry request try #1 at 10:31:03 AM
+249 verbose etag W/"70735a29d7ca64acad0b344ca2f19647"
+250 verbose lastModified Thu, 14 Oct 2021 12:50:52 GMT
+251 http request GET https://registry.npmjs.org/inversify
+252 verbose request uri https://registry.npmjs.org/chance
+253 verbose request no auth needed
+254 info attempt registry request try #1 at 10:31:03 AM
+255 verbose etag W/"f984ba3f1070b297af8d31486acc3ce6"
+256 verbose lastModified Wed, 17 Nov 2021 16:43:11 GMT
+257 http request GET https://registry.npmjs.org/chance
+258 verbose request uri https://registry.npmjs.org/multimatch
+259 verbose request no auth needed
+260 info attempt registry request try #1 at 10:31:03 AM
+261 verbose etag W/"ee7215c485def9e5a6926456481bb0c0"
+262 verbose lastModified Mon, 18 Oct 2021 11:15:24 GMT
+263 http request GET https://registry.npmjs.org/multimatch
+264 verbose request uri https://registry.npmjs.org/source-map-support
+265 verbose request no auth needed
+266 info attempt registry request try #1 at 10:31:03 AM
+267 verbose etag W/"f83ad66a5e9a4c4a5f929bfd927ffd7a"
+268 verbose lastModified Fri, 19 Nov 2021 11:03:02 GMT
+269 http request GET https://registry.npmjs.org/source-map-support
+270 verbose request uri https://registry.npmjs.org/md5
+271 verbose request no auth needed
+272 info attempt registry request try #1 at 10:31:03 AM
+273 verbose etag W/"6a83efe756478702892ebf9e5bb779bb"
+274 verbose lastModified Sun, 02 Aug 2020 10:29:37 GMT
+275 http request GET https://registry.npmjs.org/md5
+276 verbose request uri https://registry.npmjs.org/js-string-escape
+277 verbose request no auth needed
+278 info attempt registry request try #1 at 10:31:03 AM
+279 verbose etag W/"7a3a34bc5481391a843e83ec11634ab4"
+280 verbose lastModified Sun, 27 May 2018 05:33:39 GMT
+281 http request GET https://registry.npmjs.org/js-string-escape
+282 verbose request uri https://registry.npmjs.org/eslint-scope
+283 verbose request no auth needed
+284 info attempt registry request try #1 at 10:31:03 AM
+285 verbose etag W/"fe4ac7c79a9b5b97431260598df5f0ee"
+286 verbose lastModified Sun, 21 Nov 2021 03:43:35 GMT
+287 http request GET https://registry.npmjs.org/eslint-scope
+288 verbose request uri https://registry.npmjs.org/reflect-metadata
+289 verbose request no auth needed
+290 info attempt registry request try #1 at 10:31:03 AM
+291 verbose etag W/"954a4ffa3e45415c2a855315b964eb1c"
+292 verbose lastModified Tue, 15 Jan 2019 20:29:23 GMT
+293 http request GET https://registry.npmjs.org/reflect-metadata
+294 verbose request uri https://registry.npmjs.org/commander
+295 verbose request no auth needed
+296 info attempt registry request try #1 at 10:31:03 AM
+297 verbose etag W/"234ce2802f4e120debcded97c3997592"
+298 verbose lastModified Fri, 22 Oct 2021 07:02:08 GMT
+299 http request GET https://registry.npmjs.org/commander
+300 verbose request uri https://registry.npmjs.org/string-template
+301 verbose request no auth needed
+302 info attempt registry request try #1 at 10:31:03 AM
+303 verbose etag W/"99d8504df12e5269cf1cf07aecf7bc9a"
+304 verbose lastModified Thu, 14 Feb 2019 15:36:34 GMT
+305 http request GET https://registry.npmjs.org/string-template
+306 verbose request uri https://registry.npmjs.org/mkdirp
+307 verbose request no auth needed
+308 info attempt registry request try #1 at 10:31:03 AM
+309 verbose etag W/"d28984cb9631ee8bca6fe4b142ad79a4"
+310 verbose lastModified Sun, 14 Mar 2021 09:18:23 GMT
+311 http request GET https://registry.npmjs.org/mkdirp
+312 verbose request uri https://registry.npmjs.org/tslib
+313 verbose request no auth needed
+314 info attempt registry request try #1 at 10:31:03 AM
+315 verbose etag W/"ea88fcea82c94329959a4d1791952b54"
+316 verbose lastModified Wed, 11 Aug 2021 22:55:37 GMT
+317 http request GET https://registry.npmjs.org/tslib
+318 verbose request uri https://registry.npmjs.org/process
+319 verbose request no auth needed
+320 info attempt registry request try #1 at 10:31:03 AM
+321 verbose etag W/"980d62d31ba55d66937bf67d3fcba66e"
+322 verbose lastModified Sun, 27 May 2018 12:55:56 GMT
+323 http request GET https://registry.npmjs.org/process
+324 verbose request uri https://registry.npmjs.org/stringz
+325 verbose request no auth needed
+326 info attempt registry request try #1 at 10:31:03 AM
+327 verbose etag W/"b1f803c6b7eed01ebf326fd9dc1f7724"
+328 verbose lastModified Wed, 19 Aug 2020 02:37:02 GMT
+329 http request GET https://registry.npmjs.org/stringz
+330 http 304 https://registry.npmjs.org/class-validator
+331 verbose headers {
+331 verbose headers   date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+331 verbose headers   connection: 'keep-alive',
+331 verbose headers   'cf-ray': '6b33ae9f28cd1902-EWR',
+331 verbose headers   age: '155',
+331 verbose headers   'cache-control': 'public, max-age=300',
+331 verbose headers   etag: '"745bb66d00c1f95a46d11cb6a43a1202"',
+331 verbose headers   'last-modified': 'Sat, 20 Nov 2021 11:28:25 GMT',
+331 verbose headers   vary: 'Accept-Encoding',
+331 verbose headers   'cf-cache-status': 'HIT',
+331 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+331 verbose headers   'x-amz-replication-status': 'COMPLETED',
+331 verbose headers   server: 'cloudflare'
+331 verbose headers }
+332 silly get cb [
+332 silly get   304,
+332 silly get   {
+332 silly get     date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+332 silly get     connection: 'keep-alive',
+332 silly get     'cf-ray': '6b33ae9f28cd1902-EWR',
+332 silly get     age: '155',
+332 silly get     'cache-control': 'public, max-age=300',
+332 silly get     etag: '"745bb66d00c1f95a46d11cb6a43a1202"',
+332 silly get     'last-modified': 'Sat, 20 Nov 2021 11:28:25 GMT',
+332 silly get     vary: 'Accept-Encoding',
+332 silly get     'cf-cache-status': 'HIT',
+332 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+332 silly get     'x-amz-replication-status': 'COMPLETED',
+332 silly get     server: 'cloudflare'
+332 silly get   }
+332 silly get ]
+333 verbose etag https://registry.npmjs.org/class-validator from cache
+334 verbose get saving class-validator to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\class-validator\.cache.json
+335 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+336 silly resolveWithNewModule class-validator@0.13.1 checking installable status
+337 silly cache add args [ 'class-validator@0.13.1', null ]
+338 verbose cache add spec class-validator@0.13.1
+339 silly cache add parsed spec Result {
+339 silly cache add   raw: 'class-validator@0.13.1',
+339 silly cache add   scope: null,
+339 silly cache add   escapedName: 'class-validator',
+339 silly cache add   name: 'class-validator',
+339 silly cache add   rawSpec: '0.13.1',
+339 silly cache add   spec: '0.13.1',
+339 silly cache add   type: 'version'
+339 silly cache add }
+340 silly addNamed class-validator@0.13.1
+341 verbose addNamed "0.13.1" is a plain semver version for class-validator
+342 silly mapToRegistry name class-validator
+343 silly mapToRegistry using default registry
+344 silly mapToRegistry registry https://registry.npmjs.org/
+345 silly mapToRegistry data Result {
+345 silly mapToRegistry   raw: 'class-validator',
+345 silly mapToRegistry   scope: null,
+345 silly mapToRegistry   escapedName: 'class-validator',
+345 silly mapToRegistry   name: 'class-validator',
+345 silly mapToRegistry   rawSpec: '',
+345 silly mapToRegistry   spec: 'latest',
+345 silly mapToRegistry   type: 'tag'
+345 silly mapToRegistry }
+346 silly mapToRegistry uri https://registry.npmjs.org/class-validator
+347 verbose addNameVersion registry:https://registry.npmjs.org/class-validator not in flight; fetching
+348 verbose get https://registry.npmjs.org/class-validator not expired, no request
+349 silly cache afterAdd class-validator@0.13.1
+350 verbose afterAdd C:\Users\xiechen\AppData\Roaming\npm-cache\class-validator\0.13.1\package\package.json not in flight; writing
+351 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+352 http 304 https://registry.npmjs.org/multimatch
+353 verbose headers {
+353 verbose headers   date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+353 verbose headers   connection: 'keep-alive',
+353 verbose headers   'cf-ray': '6b33ae9f4b2a1825-EWR',
+353 verbose headers   age: '125',
+353 verbose headers   'cache-control': 'public, max-age=300',
+353 verbose headers   etag: '"ee7215c485def9e5a6926456481bb0c0"',
+353 verbose headers   'last-modified': 'Mon, 18 Oct 2021 11:15:24 GMT',
+353 verbose headers   vary: 'Accept-Encoding',
+353 verbose headers   'cf-cache-status': 'HIT',
+353 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+353 verbose headers   'x-amz-replication-status': 'COMPLETED',
+353 verbose headers   server: 'cloudflare'
+353 verbose headers }
+354 silly get cb [
+354 silly get   304,
+354 silly get   {
+354 silly get     date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+354 silly get     connection: 'keep-alive',
+354 silly get     'cf-ray': '6b33ae9f4b2a1825-EWR',
+354 silly get     age: '125',
+354 silly get     'cache-control': 'public, max-age=300',
+354 silly get     etag: '"ee7215c485def9e5a6926456481bb0c0"',
+354 silly get     'last-modified': 'Mon, 18 Oct 2021 11:15:24 GMT',
+354 silly get     vary: 'Accept-Encoding',
+354 silly get     'cf-cache-status': 'HIT',
+354 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+354 silly get     'x-amz-replication-status': 'COMPLETED',
+354 silly get     server: 'cloudflare'
+354 silly get   }
+354 silly get ]
+355 verbose etag https://registry.npmjs.org/multimatch from cache
+356 verbose get saving multimatch to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\multimatch\.cache.json
+357 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+358 verbose afterAdd C:\Users\xiechen\AppData\Roaming\npm-cache\class-validator\0.13.1\package\package.json written
+359 silly resolveWithNewModule multimatch@5.0.0 checking installable status
+360 silly cache add args [ 'multimatch@5.0.0', null ]
+361 verbose cache add spec multimatch@5.0.0
+362 silly cache add parsed spec Result {
+362 silly cache add   raw: 'multimatch@5.0.0',
+362 silly cache add   scope: null,
+362 silly cache add   escapedName: 'multimatch',
+362 silly cache add   name: 'multimatch',
+362 silly cache add   rawSpec: '5.0.0',
+362 silly cache add   spec: '5.0.0',
+362 silly cache add   type: 'version'
+362 silly cache add }
+363 silly addNamed multimatch@5.0.0
+364 verbose addNamed "5.0.0" is a plain semver version for multimatch
+365 silly mapToRegistry name multimatch
+366 silly mapToRegistry using default registry
+367 silly mapToRegistry registry https://registry.npmjs.org/
+368 silly mapToRegistry data Result {
+368 silly mapToRegistry   raw: 'multimatch',
+368 silly mapToRegistry   scope: null,
+368 silly mapToRegistry   escapedName: 'multimatch',
+368 silly mapToRegistry   name: 'multimatch',
+368 silly mapToRegistry   rawSpec: '',
+368 silly mapToRegistry   spec: 'latest',
+368 silly mapToRegistry   type: 'tag'
+368 silly mapToRegistry }
+369 silly mapToRegistry uri https://registry.npmjs.org/multimatch
+370 verbose addNameVersion registry:https://registry.npmjs.org/multimatch not in flight; fetching
+371 verbose get https://registry.npmjs.org/multimatch not expired, no request
+372 http 304 https://registry.npmjs.org/source-map-support
+373 verbose headers {
+373 verbose headers   date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+373 verbose headers   connection: 'keep-alive',
+373 verbose headers   'cf-ray': '6b33ae9f6b0e5590-EWR',
+373 verbose headers   age: '224',
+373 verbose headers   'cache-control': 'public, max-age=300',
+373 verbose headers   etag: '"f83ad66a5e9a4c4a5f929bfd927ffd7a"',
+373 verbose headers   'last-modified': 'Fri, 19 Nov 2021 11:03:02 GMT',
+373 verbose headers   vary: 'Accept-Encoding',
+373 verbose headers   'cf-cache-status': 'HIT',
+373 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+373 verbose headers   'x-amz-replication-status': 'PENDING',
+373 verbose headers   server: 'cloudflare'
+373 verbose headers }
+374 silly get cb [
+374 silly get   304,
+374 silly get   {
+374 silly get     date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+374 silly get     connection: 'keep-alive',
+374 silly get     'cf-ray': '6b33ae9f6b0e5590-EWR',
+374 silly get     age: '224',
+374 silly get     'cache-control': 'public, max-age=300',
+374 silly get     etag: '"f83ad66a5e9a4c4a5f929bfd927ffd7a"',
+374 silly get     'last-modified': 'Fri, 19 Nov 2021 11:03:02 GMT',
+374 silly get     vary: 'Accept-Encoding',
+374 silly get     'cf-cache-status': 'HIT',
+374 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+374 silly get     'x-amz-replication-status': 'PENDING',
+374 silly get     server: 'cloudflare'
+374 silly get   }
+374 silly get ]
+375 verbose etag https://registry.npmjs.org/source-map-support from cache
+376 verbose get saving source-map-support to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\source-map-support\.cache.json
+377 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+378 http 304 https://registry.npmjs.org/assert
+379 verbose headers {
+379 verbose headers   date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+379 verbose headers   connection: 'keep-alive',
+379 verbose headers   'cf-ray': '6b33ae9f381032ee-EWR',
+379 verbose headers   age: '78',
+379 verbose headers   'cache-control': 'public, max-age=300',
+379 verbose headers   etag: '"5f9600ea8f6d4cbbabe9479d85438529"',
+379 verbose headers   'last-modified': 'Thu, 09 Apr 2020 09:52:37 GMT',
+379 verbose headers   vary: 'Accept-Encoding',
+379 verbose headers   'cf-cache-status': 'HIT',
+379 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+379 verbose headers   server: 'cloudflare'
+379 verbose headers }
+380 silly get cb [
+380 silly get   304,
+380 silly get   {
+380 silly get     date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+380 silly get     connection: 'keep-alive',
+380 silly get     'cf-ray': '6b33ae9f381032ee-EWR',
+380 silly get     age: '78',
+380 silly get     'cache-control': 'public, max-age=300',
+380 silly get     etag: '"5f9600ea8f6d4cbbabe9479d85438529"',
+380 silly get     'last-modified': 'Thu, 09 Apr 2020 09:52:37 GMT',
+380 silly get     vary: 'Accept-Encoding',
+380 silly get     'cf-cache-status': 'HIT',
+380 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+380 silly get     server: 'cloudflare'
+380 silly get   }
+380 silly get ]
+381 verbose etag https://registry.npmjs.org/assert from cache
+382 verbose get saving assert to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\assert\.cache.json
+383 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+384 http 304 https://registry.npmjs.org/commander
+385 verbose headers {
+385 verbose headers   date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+385 verbose headers   connection: 'keep-alive',
+385 verbose headers   'cf-ray': '6b33ae9f682ce730-EWR',
+385 verbose headers   age: '284',
+385 verbose headers   'cache-control': 'public, max-age=300',
+385 verbose headers   etag: '"234ce2802f4e120debcded97c3997592"',
+385 verbose headers   'last-modified': 'Fri, 22 Oct 2021 07:02:08 GMT',
+385 verbose headers   vary: 'Accept-Encoding',
+385 verbose headers   'cf-cache-status': 'HIT',
+385 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+385 verbose headers   'x-amz-replication-status': 'PENDING',
+385 verbose headers   server: 'cloudflare'
+385 verbose headers }
+386 silly get cb [
+386 silly get   304,
+386 silly get   {
+386 silly get     date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+386 silly get     connection: 'keep-alive',
+386 silly get     'cf-ray': '6b33ae9f682ce730-EWR',
+386 silly get     age: '284',
+386 silly get     'cache-control': 'public, max-age=300',
+386 silly get     etag: '"234ce2802f4e120debcded97c3997592"',
+386 silly get     'last-modified': 'Fri, 22 Oct 2021 07:02:08 GMT',
+386 silly get     vary: 'Accept-Encoding',
+386 silly get     'cf-cache-status': 'HIT',
+386 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+386 silly get     'x-amz-replication-status': 'PENDING',
+386 silly get     server: 'cloudflare'
+386 silly get   }
+386 silly get ]
+387 verbose etag https://registry.npmjs.org/commander from cache
+388 verbose get saving commander to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\commander\.cache.json
+389 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+390 http 304 https://registry.npmjs.org/reflect-metadata
+391 verbose headers {
+391 verbose headers   date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+391 verbose headers   connection: 'keep-alive',
+391 verbose headers   'cf-ray': '6b33ae9f6d9b19df-EWR',
+391 verbose headers   age: '256',
+391 verbose headers   'cache-control': 'public, max-age=300',
+391 verbose headers   etag: '"954a4ffa3e45415c2a855315b964eb1c"',
+391 verbose headers   'last-modified': 'Tue, 15 Jan 2019 20:29:23 GMT',
+391 verbose headers   vary: 'Accept-Encoding',
+391 verbose headers   'cf-cache-status': 'HIT',
+391 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+391 verbose headers   server: 'cloudflare'
+391 verbose headers }
+392 silly get cb [
+392 silly get   304,
+392 silly get   {
+392 silly get     date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+392 silly get     connection: 'keep-alive',
+392 silly get     'cf-ray': '6b33ae9f6d9b19df-EWR',
+392 silly get     age: '256',
+392 silly get     'cache-control': 'public, max-age=300',
+392 silly get     etag: '"954a4ffa3e45415c2a855315b964eb1c"',
+392 silly get     'last-modified': 'Tue, 15 Jan 2019 20:29:23 GMT',
+392 silly get     vary: 'Accept-Encoding',
+392 silly get     'cf-cache-status': 'HIT',
+392 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+392 silly get     server: 'cloudflare'
+392 silly get   }
+392 silly get ]
+393 verbose etag https://registry.npmjs.org/reflect-metadata from cache
+394 verbose get saving reflect-metadata to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\reflect-metadata\.cache.json
+395 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+396 http 304 https://registry.npmjs.org/mkdirp
+397 verbose headers {
+397 verbose headers   date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+397 verbose headers   connection: 'keep-alive',
+397 verbose headers   'cf-ray': '6b33ae9f6ab1198e-EWR',
+397 verbose headers   age: '81',
+397 verbose headers   'cache-control': 'public, max-age=300',
+397 verbose headers   etag: '"d28984cb9631ee8bca6fe4b142ad79a4"',
+397 verbose headers   'last-modified': 'Sun, 14 Mar 2021 09:18:23 GMT',
+397 verbose headers   vary: 'Accept-Encoding',
+397 verbose headers   'cf-cache-status': 'HIT',
+397 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+397 verbose headers   server: 'cloudflare'
+397 verbose headers }
+398 silly get cb [
+398 silly get   304,
+398 silly get   {
+398 silly get     date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+398 silly get     connection: 'keep-alive',
+398 silly get     'cf-ray': '6b33ae9f6ab1198e-EWR',
+398 silly get     age: '81',
+398 silly get     'cache-control': 'public, max-age=300',
+398 silly get     etag: '"d28984cb9631ee8bca6fe4b142ad79a4"',
+398 silly get     'last-modified': 'Sun, 14 Mar 2021 09:18:23 GMT',
+398 silly get     vary: 'Accept-Encoding',
+398 silly get     'cf-cache-status': 'HIT',
+398 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+398 silly get     server: 'cloudflare'
+398 silly get   }
+398 silly get ]
+399 verbose etag https://registry.npmjs.org/mkdirp from cache
+400 verbose get saving mkdirp to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\mkdirp\.cache.json
+401 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+402 http 304 https://registry.npmjs.org/tslib
+403 verbose headers {
+403 verbose headers   date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+403 verbose headers   connection: 'keep-alive',
+403 verbose headers   'cf-ray': '6b33ae9f4a8618c8-EWR',
+403 verbose headers   age: '3',
+403 verbose headers   'cache-control': 'public, max-age=300',
+403 verbose headers   etag: '"ea88fcea82c94329959a4d1791952b54"',
+403 verbose headers   'last-modified': 'Wed, 11 Aug 2021 22:55:37 GMT',
+403 verbose headers   vary: 'Accept-Encoding',
+403 verbose headers   'cf-cache-status': 'HIT',
+403 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+403 verbose headers   'x-amz-replication-status': 'COMPLETED',
+403 verbose headers   server: 'cloudflare'
+403 verbose headers }
+404 silly get cb [
+404 silly get   304,
+404 silly get   {
+404 silly get     date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+404 silly get     connection: 'keep-alive',
+404 silly get     'cf-ray': '6b33ae9f4a8618c8-EWR',
+404 silly get     age: '3',
+404 silly get     'cache-control': 'public, max-age=300',
+404 silly get     etag: '"ea88fcea82c94329959a4d1791952b54"',
+404 silly get     'last-modified': 'Wed, 11 Aug 2021 22:55:37 GMT',
+404 silly get     vary: 'Accept-Encoding',
+404 silly get     'cf-cache-status': 'HIT',
+404 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+404 silly get     'x-amz-replication-status': 'COMPLETED',
+404 silly get     server: 'cloudflare'
+404 silly get   }
+404 silly get ]
+405 verbose etag https://registry.npmjs.org/tslib from cache
+406 verbose get saving tslib to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\tslib\.cache.json
+407 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+408 silly resolveWithNewModule source-map-support@0.5.20 checking installable status
+409 silly cache add args [ 'source-map-support@0.5.20', null ]
+410 verbose cache add spec source-map-support@0.5.20
+411 silly cache add parsed spec Result {
+411 silly cache add   raw: 'source-map-support@0.5.20',
+411 silly cache add   scope: null,
+411 silly cache add   escapedName: 'source-map-support',
+411 silly cache add   name: 'source-map-support',
+411 silly cache add   rawSpec: '0.5.20',
+411 silly cache add   spec: '0.5.20',
+411 silly cache add   type: 'version'
+411 silly cache add }
+412 silly addNamed source-map-support@0.5.20
+413 verbose addNamed "0.5.20" is a plain semver version for source-map-support
+414 silly mapToRegistry name source-map-support
+415 silly mapToRegistry using default registry
+416 silly mapToRegistry registry https://registry.npmjs.org/
+417 silly mapToRegistry data Result {
+417 silly mapToRegistry   raw: 'source-map-support',
+417 silly mapToRegistry   scope: null,
+417 silly mapToRegistry   escapedName: 'source-map-support',
+417 silly mapToRegistry   name: 'source-map-support',
+417 silly mapToRegistry   rawSpec: '',
+417 silly mapToRegistry   spec: 'latest',
+417 silly mapToRegistry   type: 'tag'
+417 silly mapToRegistry }
+418 silly mapToRegistry uri https://registry.npmjs.org/source-map-support
+419 verbose addNameVersion registry:https://registry.npmjs.org/source-map-support not in flight; fetching
+420 http 304 https://registry.npmjs.org/md5
+421 verbose headers {
+421 verbose headers   date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+421 verbose headers   connection: 'keep-alive',
+421 verbose headers   'cf-ray': '6b33ae9f5e87f051-EWR',
+421 verbose headers   age: '18',
+421 verbose headers   'cache-control': 'public, max-age=300',
+421 verbose headers   etag: '"6a83efe756478702892ebf9e5bb779bb"',
+421 verbose headers   'last-modified': 'Sun, 02 Aug 2020 10:29:37 GMT',
+421 verbose headers   vary: 'Accept-Encoding',
+421 verbose headers   'cf-cache-status': 'HIT',
+421 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+421 verbose headers   server: 'cloudflare'
+421 verbose headers }
+422 silly get cb [
+422 silly get   304,
+422 silly get   {
+422 silly get     date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+422 silly get     connection: 'keep-alive',
+422 silly get     'cf-ray': '6b33ae9f5e87f051-EWR',
+422 silly get     age: '18',
+422 silly get     'cache-control': 'public, max-age=300',
+422 silly get     etag: '"6a83efe756478702892ebf9e5bb779bb"',
+422 silly get     'last-modified': 'Sun, 02 Aug 2020 10:29:37 GMT',
+422 silly get     vary: 'Accept-Encoding',
+422 silly get     'cf-cache-status': 'HIT',
+422 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+422 silly get     server: 'cloudflare'
+422 silly get   }
+422 silly get ]
+423 verbose etag https://registry.npmjs.org/md5 from cache
+424 verbose get saving md5 to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\md5\.cache.json
+425 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+426 silly resolveWithNewModule assert@2.0.0 checking installable status
+427 silly cache add args [ 'assert@2.0.0', null ]
+428 verbose cache add spec assert@2.0.0
+429 silly cache add parsed spec Result {
+429 silly cache add   raw: 'assert@2.0.0',
+429 silly cache add   scope: null,
+429 silly cache add   escapedName: 'assert',
+429 silly cache add   name: 'assert',
+429 silly cache add   rawSpec: '2.0.0',
+429 silly cache add   spec: '2.0.0',
+429 silly cache add   type: 'version'
+429 silly cache add }
+430 silly addNamed assert@2.0.0
+431 verbose addNamed "2.0.0" is a plain semver version for assert
+432 silly mapToRegistry name assert
+433 silly mapToRegistry using default registry
+434 silly mapToRegistry registry https://registry.npmjs.org/
+435 silly mapToRegistry data Result {
+435 silly mapToRegistry   raw: 'assert',
+435 silly mapToRegistry   scope: null,
+435 silly mapToRegistry   escapedName: 'assert',
+435 silly mapToRegistry   name: 'assert',
+435 silly mapToRegistry   rawSpec: '',
+435 silly mapToRegistry   spec: 'latest',
+435 silly mapToRegistry   type: 'tag'
+435 silly mapToRegistry }
+436 silly mapToRegistry uri https://registry.npmjs.org/assert
+437 verbose addNameVersion registry:https://registry.npmjs.org/assert not in flight; fetching
+438 silly resolveWithNewModule reflect-metadata@0.1.13 checking installable status
+439 silly cache add args [ 'reflect-metadata@0.1.13', null ]
+440 verbose cache add spec reflect-metadata@0.1.13
+441 silly cache add parsed spec Result {
+441 silly cache add   raw: 'reflect-metadata@0.1.13',
+441 silly cache add   scope: null,
+441 silly cache add   escapedName: 'reflect-metadata',
+441 silly cache add   name: 'reflect-metadata',
+441 silly cache add   rawSpec: '0.1.13',
+441 silly cache add   spec: '0.1.13',
+441 silly cache add   type: 'version'
+441 silly cache add }
+442 silly addNamed reflect-metadata@0.1.13
+443 verbose addNamed "0.1.13" is a plain semver version for reflect-metadata
+444 silly mapToRegistry name reflect-metadata
+445 silly mapToRegistry using default registry
+446 silly mapToRegistry registry https://registry.npmjs.org/
+447 silly mapToRegistry data Result {
+447 silly mapToRegistry   raw: 'reflect-metadata',
+447 silly mapToRegistry   scope: null,
+447 silly mapToRegistry   escapedName: 'reflect-metadata',
+447 silly mapToRegistry   name: 'reflect-metadata',
+447 silly mapToRegistry   rawSpec: '',
+447 silly mapToRegistry   spec: 'latest',
+447 silly mapToRegistry   type: 'tag'
+447 silly mapToRegistry }
+448 silly mapToRegistry uri https://registry.npmjs.org/reflect-metadata
+449 verbose addNameVersion registry:https://registry.npmjs.org/reflect-metadata not in flight; fetching
+450 http 304 https://registry.npmjs.org/process
+451 verbose headers {
+451 verbose headers   date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+451 verbose headers   connection: 'keep-alive',
+451 verbose headers   'cf-ray': '6b33ae9f6ccf333c-EWR',
+451 verbose headers   age: '73',
+451 verbose headers   'cache-control': 'public, max-age=300',
+451 verbose headers   etag: '"980d62d31ba55d66937bf67d3fcba66e"',
+451 verbose headers   'last-modified': 'Sun, 27 May 2018 12:55:56 GMT',
+451 verbose headers   vary: 'Accept-Encoding',
+451 verbose headers   'cf-cache-status': 'HIT',
+451 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+451 verbose headers   server: 'cloudflare'
+451 verbose headers }
+452 silly get cb [
+452 silly get   304,
+452 silly get   {
+452 silly get     date: 'Wed, 24 Nov 2021 15:31:04 GMT',
+452 silly get     connection: 'keep-alive',
+452 silly get     'cf-ray': '6b33ae9f6ccf333c-EWR',
+452 silly get     age: '73',
+452 silly get     'cache-control': 'public, max-age=300',
+452 silly get     etag: '"980d62d31ba55d66937bf67d3fcba66e"',
+452 silly get     'last-modified': 'Sun, 27 May 2018 12:55:56 GMT',
+452 silly get     vary: 'Accept-Encoding',
+452 silly get     'cf-cache-status': 'HIT',
+452 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+452 silly get     server: 'cloudflare'
+452 silly get   }
+452 silly get ]
+453 verbose etag https://registry.npmjs.org/process from cache
+454 verbose get saving process to C:\Users\xiechen\AppData\Roaming\npm-cache\registry.npmjs.org\process\.cache.json
+455 verbose correctMkdir C:\Users\xiechen\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+456 verbose stack Error: Missing required argument #1
+456 verbose stack     at andLogAndFinish (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:31:3)
+456 verbose stack     at fetchPackageMetadata (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:51:22)
+456 verbose stack     at resolveWithNewModule (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:518:12)
+456 verbose stack     at C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:519:7
+456 verbose stack     at C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\node_modules\iferr\index.js:13:50
+456 verbose stack     at C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:37:12
+456 verbose stack     at addRequestedAndFinish (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:67:5)
+456 verbose stack     at returnAndAddMetadata (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:121:7)
+456 verbose stack     at pickVersionFromRegistryDocument (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:146:20)
+456 verbose stack     at C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\node_modules\iferr\index.js:13:50
+457 verbose cwd C:\Users\xiechen\Desktop\KenoStars_TRGS_Demo_Raw.Assets.from.Artist\fromMac\1124\10406_Keno.Stars_H5_RGS_Demo_TRGS-main
+458 error Windows_NT 6.1.7601
+459 error argv "C:\\Program Files (x86)\\nodejs\\node.exe" "C:\\Users\\xiechen\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "javascript-obfuscator" "--save" "-g"
+460 error node v13.14.0
+461 error npm  v3.10.6
+462 error code EMISSINGARG
+463 error typeerror Error: Missing required argument #1
+463 error typeerror     at andLogAndFinish (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:31:3)
+463 error typeerror     at fetchPackageMetadata (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:51:22)
+463 error typeerror     at resolveWithNewModule (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:518:12)
+463 error typeerror     at C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:519:7
+463 error typeerror     at C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\node_modules\iferr\index.js:13:50
+463 error typeerror     at C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:37:12
+463 error typeerror     at addRequestedAndFinish (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:67:5)
+463 error typeerror     at returnAndAddMetadata (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:121:7)
+463 error typeerror     at pickVersionFromRegistryDocument (C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:146:20)
+463 error typeerror     at C:\Users\xiechen\AppData\Roaming\npm\node_modules\npm\node_modules\iferr\index.js:13:50
+464 error typeerror This is an error with npm itself. Please report this error at:
+464 error typeerror     <http://github.com/npm/npm/issues>
+465 verbose exit [ 1, true ]

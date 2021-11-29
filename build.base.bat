@@ -1,12 +1,12 @@
 @echo off
 
-set GameName=KenoStars
+set GameName=FiestaBingo
 
 REM set TargetDir=D:\Development\wamp\www\%GameName%\
 
 REM if %computerName%==DESKTOPOO7 set TargetDir=C:\wamp64\www\%GameName%\
 
-set TargetDir=.\Build\
+set TargetDir=C:\wamp\www\NewRGSProjects\10406_Keno.Stars_H5_RGS_Demo_TRGS\Build\
 
 
 REM Don't Modify Anything Below *************************
@@ -25,13 +25,13 @@ echo *******BASE*******   Clean Up Target Dir :  %TargetDir%
 if exist %TargetDir% rmdir %TargetDir% /s /q
 
 echo *******BASE*******   Copying Template Index File
-call xcopy "Template\" "%TargetDir%" /i /s /y >nul
+call xcopy "Template" "%TargetDir%" /i /s /y >nul
     
 echo *******BASE*******   Copying Res Files
-call xcopy "res\" "%TargetDir%res\" /i /s /y >nul
+call xcopy "res" "%TargetDir%res\" /i /s /y >nul
 
 echo *******BASE*******   Copying common Files
-call xcopy "common\" "%TargetDir%common\" /i /s /y >nul   
+call xcopy "common" "%TargetDir%common\" /i /s /y >nul   
 
 REM You need to install Python 3.X
 echo *******BASE*******   Building Temp JS File :  (%TmpJsFileName%)

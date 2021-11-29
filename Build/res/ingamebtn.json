@@ -1,0 +1,140 @@
+{"frames": {
+
+"autoPick_press.png":
+{
+	"frame": {"x":1083,"y":249,"w":247,"h":246},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":247,"h":246},
+	"sourceSize": {"w":247,"h":246}
+},
+"autoPick_Roll.png":
+{
+	"frame": {"x":1083,"y":1,"w":247,"h":246},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":247,"h":246},
+	"sourceSize": {"w":247,"h":246}
+},
+"autoPick_unroll.png":
+{
+	"frame": {"x":1083,"y":497,"w":247,"h":246},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":247,"h":246},
+	"sourceSize": {"w":247,"h":246}
+},
+"btn_autoplay_press.png":
+{
+	"frame": {"x":1083,"y":1695,"w":137,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":101},
+	"sourceSize": {"w":137,"h":101}
+},
+"btn_autoPlay_roll.png":
+{
+	"frame": {"x":1083,"y":1489,"w":137,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":101},
+	"sourceSize": {"w":137,"h":101}
+},
+"btn_autoPlay_unroll.png":
+{
+	"frame": {"x":1083,"y":1592,"w":137,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":101},
+	"sourceSize": {"w":137,"h":101}
+},
+"clearAll_press.png":
+{
+	"frame": {"x":796,"y":1923,"w":209,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+	"sourceSize": {"w":209,"h":62}
+},
+"clearAll_roll.png":
+{
+	"frame": {"x":1007,"y":1923,"w":209,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+	"sourceSize": {"w":209,"h":62}
+},
+"clearAll_unroll.png":
+{
+	"frame": {"x":1083,"y":1798,"w":209,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+	"sourceSize": {"w":209,"h":62}
+},
+"ingame_play_button_emitter.png":
+{
+	"frame": {"x":1083,"y":1862,"w":44,"h":44},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":44,"h":44},
+	"sourceSize": {"w":44,"h":44}
+},
+"newBalls_green.png":
+{
+	"frame": {"x":1218,"y":1862,"w":89,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":90},
+	"sourceSize": {"w":89,"h":90}
+},
+"revealAll.png":
+{
+	"frame": {"x":1083,"y":745,"w":247,"h":246},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":247,"h":246},
+	"sourceSize": {"w":247,"h":246}
+},
+"revealAllPress.png":
+{
+	"frame": {"x":1083,"y":993,"w":247,"h":246},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":247,"h":246},
+	"sourceSize": {"w":247,"h":246}
+},
+"revealAllRoll.png":
+{
+	"frame": {"x":1083,"y":1241,"w":247,"h":246},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":247,"h":246},
+	"sourceSize": {"w":247,"h":246}
+},
+"starField.png":
+{
+	"frame": {"x":1,"y":1,"w":1080,"h":1920},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1080,"h":1920},
+	"sourceSize": {"w":1080,"h":1920}
+},
+"window_messagenew.png":
+{
+	"frame": {"x":1,"y":1923,"w":793,"h":63},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":793,"h":63},
+	"sourceSize": {"w":793,"h":63}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ingamebtn.png",
+	"format": "RGBA8888",
+	"size": {"w":1331,"h":1987},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1e97868d9ee6db4dc6a6bad19ce0f362:ada5ebaab8a1e58290b915c5626def0f:25549fa1958b7404d85af7b35140c975$"
+}
+}
