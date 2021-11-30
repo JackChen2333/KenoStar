@@ -3,10 +3,11 @@
 <p>Si usted tiene un problema de jugador compulsivo llame al 1-800-522-4700.</p>
 <p>All prizes over $9,999.99 must be claimed at the Office of Lottery and Gaming Prize Center.</p>
 <p><strong>How to play</strong></p>
-<p>Select the ticket cost, then press PLAY or press the Space bar on your keyboard to purchase the ticket and start the game.</p>
+<p>Select the ticket cost. Select any ten numbers or choose AUTO PICK then press PLAY or press the Space bar on your keyboard to purchase the ticket and start the game.</p>
 <p>Once the PLAY button has been selected the stake is deducted from the current balance and the game starts</p>
 <p>At the end of the game, any winnings for that go are displayed in the TOTAL WON panel. To play again press the PLAY button or press the Space bar on your keyboard.</p>
-<p>Press PLAY and the board of hexagons will flip to show a new symbol within each hexagon slot. If a winning pattern is revealed you win the prize for that pattern.</p>
+<p><Press PLAY and twenty winning numbers will be selected. Some numbers may reveal bonus stars. Press REVEAL ALL to skip to the result. Match five to ten winning numbers, or zero to win the corresponding prize./p>
+
 <p><strong>Winning patterns</strong></p>
 <p>Revealing a cluster of 3 or more matching symbols where each symbol is touching another matching symbol wins the corresponding prize in the Pay Table. Symbols appear within hexagons, so there are 6 potential sides that can be touching.</p>
 <p>If a winning pattern is revealed and that pattern creates a complete link from the top to the bottom of the game board, the prize for that pattern is multiplied by 2.</p>

@@ -20,7 +20,7 @@ xqu.config.SCREEN_CENTER_X = 0;
 xqu.config.SCREEN_CENTER_Y = 0;
 
 xqu.config.DEBUG_MODE = false;
-xqu.config.DEBUG_MODE = true; // Comment this when shipping
+//xqu.config.DEBUG_MODE = true; // Comment this when shipping
 
 // xqu.config.GAME_MODE = xqu.config._GAME_MODE_STANDALONE;
 // xqu.config.GAME_MODE = xqu.config._GAME_MODE_SERVER_MODE;

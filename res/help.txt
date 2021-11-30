@@ -28,7 +28,7 @@
 
 
 <p>
-  	Select the ticket cost, then press PLAY or press the Space bar on your keyboard to purchase the ticket and start the game. One or two bingo cards will be activated depending on the ticket cost selected.
+    Select the ticket cost. Select any ten numbers or choose AUTO PICK then press PLAY or press the Space bar on your keyboard to purchase the ticket and start the game.
 </p>
 
 
@@ -43,20 +43,20 @@
 
 
 <p>
-  	Press PLAY and the card numbers to match will be revealed. The winning bonus number is also revealed in the top left. Thirty draw balls appear. Press TURBO to speed up the draw. If a winning pattern is revealed, you win the prize for that pattern. Only the highest prize pattern is awarded for each card.
+    Press PLAY and twenty winning numbers will be selected. Some numbers may reveal bonus stars. Press REVEAL ALL to skip to the result. Match five to ten winning numbers, or zero to win the corresponding prize.
 </p>
 
 
-<p><strong>Bonus Games</strong></p>
+<p><strong>Bonus Multipliers and Progressive Jackpot</strong></p>
 <ul>
    <li>
       <p>
-        Instant Win Bonus - If the bonus number is matched, an instant win prize will be awarded. Tap the bonus win pinata to reveal your instant win prize.
+        Bonus Multipliers - If one to four stars are revealed during a draw, the corresponding multiplier will be awarded.
      </p>
    </li>
    <li>
       <p>
-       Bonus Spin Multiplier – Press anywhere to start the Bonus Spin Reels. If three matching symbols are revealed, you win the multiplier shown.
+       Progressive Jackpot – If all ten of the winning numbers have been matched and five stars have been revealed, the current progressive jackpot corresponding to the player's wager will be awarded.
      </p>
    </li>
 </ul>
@@ -66,10 +66,13 @@
 <p>Wins are achieved by:</p>
 <ul>
    <li>
-      <p>Revealing a winning pattern on one or two cards.</p>
+      <p>Matching five to ten, or zero of the winning numbers.</p>
    </li>
    <li>
-      <p>Matching the game’s bonus number and revealing the instant win prize.</p>
+      <p>Multipliers are awarded when bonus stars are revealed.</p>
+   </li>
+   <li>
+      <p>Match 10 numbers and reveal five bonus stars to win the progressive jackpot.</p>
    </li>
 </ul>
 <p>v1 </p>
